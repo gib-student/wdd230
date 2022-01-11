@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+body {
+    background-color: burlywood;
+    margin: 4%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 15px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18pt;
+}
+
+footer {
+    padding: 2px;
+    padding-left: 2%;
+    background-color: cadetblue;
+    color:cornsilk;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    font-size: smaller;
+}
+
+.title-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color: cadetblue;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: 'Staatliches', cursive;
+}
+
+#profile-pic {
+    margin: 4%;
+    max-width: 200px;
+    box-shadow: 10px 10px 5px darkslategrey;
+}
+
+#name {
+    padding: 5%;
+    color: cornsilk;
+}
+
+.lesson-links {
+    padding: 30px;
+    background-color: cornsilk;
+}
