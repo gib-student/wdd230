@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Mono&display=swap');
+
+body {
+    background-color: #fbfcff;
+    margin: 2rem 25% 25%;
+}
+div.title-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: #1c6e8c;
+    padding: 2px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    justify-content: left;
+    align-items: center;
+}
+div.lesson-links {
+    background-color: #d0ccd0;
+    padding: 2px;
+    padding-left: 2rem;
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+ul {
+    font-size: 1.3em;
+}
+h1 {
+    padding-left: 5rem;
+    font-size: 3em;
+    font-family: 'Roboto Mono', monospace;
+}
+h2 {
+
+}
+footer {
+    background-color: #1c6e8c;
+    padding: 2px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    color: #fbfcff;
+}
+img.personal-photo {
+    padding: 1rem;
+}
