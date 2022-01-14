@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather&family=Raleway:wght@300&family=Roboto+Mono&display=swap');
+
+body{
+    background-color: #fbfcff;
+}
+header {
+    text-align: center;
+    background-color: #b9d8c2;
+    padding: 1rem;
+    border-radius: 10px;
+}
+#examples {
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.principle {
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #fbfcff;
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+#principle-1 {
+    margin-top: 20px;
+}
+img {
+    padding-top: .5rem;
+    max-width: 100%;
+}
+.company-link {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+}
+.explanation {
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    padding: 4px;
+    font-size: 1.2em;
+}
+footer {
+    text-align: center;
+    background-color: #b9d8c2;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.footer-text {
+    font-size: 1.3em;
+    font-family: 'Raleway', sans-serif;
+}
+h1 {
+    font-size: 1.7em;
+    font-family: 'Merriweather', serif;
+}
+h2 {
+    font-family: 'Lato', sans-serif;
+}
+h3 {
+    font-family: 'Lato', sans-serif;
+}
+#principle-title {
+    margin-bottom: -10px;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+#company-title {
+    font-size: 1em;
+    padding-bottom: 1rem;
+}
+@media only screen and (min-width: 700px) {
+    .explanation {
+        font-size: 1.7em;
+    }
+}
+@media only screen and (min-width: 850px) {
+    #examples {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #principle-1 {
+        margin-top: 0px;
+    }
+    .explanation {
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    body {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+}

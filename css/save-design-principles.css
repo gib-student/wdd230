@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@300&family=Roboto+Mono&display=swap');
 
+/* This is valid css for the desktop view. I saved this and adjusted the original
+    for the mobile version of the css. */
 body {
     margin-top: 1rem;
     margin-right: 20%;
     margin-left: 20%;
 }
 header {
+    justify-content: center;
     text-align: center;
     background-color: #1c6e8c;
     padding-bottom: 10px;
@@ -14,7 +17,6 @@ header {
 }
 #examples {
     display: flex;
-    flex-direction: row;
     justify-items: stretch;
     margin-top: 10px;
     margin-bottom: 10px;

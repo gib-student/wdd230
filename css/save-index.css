@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather&family=Raleway:wght@300&family=Roboto+Mono&display=swap');
 
+/* CSS for index.html for the desktop version. Original was changed to be for mobile. */
 body {
     background-color: #fbfcff;
+    margin: 2rem 25% 25%;
 }
 div.title-bar {
     display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
+    flex-direction: row;
     background-color: #b9d8c2;
     padding: 2px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    justify-content: left;
+    align-items: center;
     padding: 2rem;
 }
 div.lesson-links {
@@ -26,7 +29,8 @@ ul {
     font-size: 1.3em;
 }
 h1 {
-    font-size: 2em;
+    padding-left: 5rem;
+    font-size: 3em;
     font-family: 'Merriweather', serif;
 }
 footer {
