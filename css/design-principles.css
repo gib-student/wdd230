@@ -71,11 +71,13 @@ h3 {
     font-size: 1em;
     padding-bottom: 1rem;
 }
+/* At this point the font is too small to see */
 @media only screen and (min-width: 700px) {
     .explanation {
         font-size: 1.7em;
     }
 }
+/* Tablet view */
 @media only screen and (min-width: 850px) {
     #principle-1 {
         margin-top: 0px;
@@ -87,7 +89,7 @@ h3 {
         max-width: 50%;
     }
 }
-
+/* Desktop view */
 @media only screen and (min-width: 1470px) {
     body {
         margin-right: 20%;
