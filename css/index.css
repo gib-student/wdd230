@@ -6,7 +6,7 @@ body {
 div.title-bar {
     display: flex;
     flex-direction: column-reverse;
-    text-align: center;
+    align-items: center;
     background-color: #b9d8c2;
     padding: 2px;
     border-top-left-radius: 20px;
@@ -28,6 +28,7 @@ ul {
 h1 {
     font-size: 2em;
     font-family: 'Merriweather', serif;
+    text-align: center;
 }
 footer {
     background-color: #b9d8c2;
@@ -39,10 +40,17 @@ footer {
     text-align: center;
     color: #fbfcff;
 }
-img.personal-photo {
+.personal-photo {
     box-shadow: 5px 5px 2px grey;
+    max-width: 400px;
 }
 a:hover {
     color: red;
     transition: .3s;
+}
+@media only screen and (min-width: 850px) {
+    body {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
 }

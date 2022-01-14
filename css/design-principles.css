@@ -10,6 +10,8 @@ header {
     border-radius: 10px;
 }
 #examples {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -20,7 +22,7 @@ header {
     border-radius: 10px;
     background-color: #fbfcff;
     margin-bottom: 15px;
-    max-width: 100%;
+    min-width: 33%  
 }
 #principle-1 {
     margin-top: 20px;
@@ -75,21 +77,23 @@ h3 {
     }
 }
 @media only screen and (min-width: 850px) {
-    #examples {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
     #principle-1 {
         margin-top: 0px;
     }
     .explanation {
         font-size: 1.4em;
     }
+    .principle {
+        max-width: 50%;
+    }
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1470px) {
     body {
-        margin-right: 15%;
-        margin-left: 15%;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    .principle {
+        max-width: 33%;
     }
 }
