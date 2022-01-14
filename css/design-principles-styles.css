@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@300&family=Roboto+Mono&display=swap');
+
+body {
+    margin-top: 1rem;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+header {
+    text-align: center;
+    background-color: #1c6e8c;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 2px;
+}
+#examples {
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+    background-color: #d0ccd0;
+}
+#principle-1 {
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+}
+#principle-2 {
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+}
+#principle-3 {
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+}
+.company-link
+{
+    font-family: 'Raleway', sans-serif;    
+}
+.explanation {
+    font-family: 'Raleway', sans-serif; 
+}
+footer {
+    background-color: #1c6e8c;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+h1 {
+    padding-left: 5rem;
+    font-size: 2em;
+    font-family: 'Roboto Mono', monospace;
+}
+h2 {
+    font-family: 'Lato', sans-serif;
+}
+h3 {
+    font-family: 'Lato', sans-serif;
+}
