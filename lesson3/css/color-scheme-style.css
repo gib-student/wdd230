@@ -1,0 +1,19 @@
+#primary-color {
+    color: #daf7dc;
+    background-color:darkgrey;
+}
+#secondary-color {
+    color: #9ee493;
+}
+#additional-color-1 {
+   color: #abc8c0;
+}
+#additional-color-2 {
+    color: #70566d;
+}
+#additional-color-3 {
+    color: #42273b;
+}
+.color {
+    font-size: 2em;
+}
