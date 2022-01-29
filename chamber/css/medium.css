@@ -1,0 +1,16 @@
+/* Media query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+    .top-bar-nav {
+        display: flex;
+    }
+    .top-bar-nav li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .top-bar-nav a {
+        text-align: center;
+    }
+    .top-bar-nav li:first-child {
+        display: none;
+    }
+}

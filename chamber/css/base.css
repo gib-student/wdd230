@@ -1,0 +1,28 @@
+header {
+    width: 100%;
+}
+nav {
+    margin: 0 auto;
+    background-color:
+}
+.top-bar-nav li:first-child{
+    display: block;
+}
+.top-bar-nav li {
+    display: none;
+}
+.top-bar-nav a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+}
+.top-bar-nav a.hamburger::before {
+    content: "O ";
+}
+.responsive li {
+    display: block;
+}
+.responsive a.ham::before {
+    content: "X ";
+}
