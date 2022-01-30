@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather&family=Raleway:wght@300&family=Roboto+Mono&display=swap');
+
 header {
     width: 100%;
+}
+h1 {
+    font-family: 'Merriweather', serif;
 }
 nav {
     margin: 0 auto;
     background-color: #abc8c0;
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    font-family: 'Raleway', sans-serif;
 }
 .top-bar-nav {
     list-style: none;
@@ -36,6 +45,12 @@ nav {
 }
 .responsive a.hamburger::before {
     content: "X ";
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+img {
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Website whic helped me with hamburger menu: https://codepen.io/blazzard-jason/pen/gmGxaj/ */

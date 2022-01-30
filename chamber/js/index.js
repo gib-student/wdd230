@@ -11,3 +11,10 @@ window.onresize = () => {
         mainNav.classList.remove()
     }
 };
+
+const date = new Date();
+const year = date.getFullYear();
+const lastModified = document.lastModified;
+
+document.querySelector('#copyrightYear').innerHTML = year;
+document.querySelector('#modified').innerHTML = lastModified;
