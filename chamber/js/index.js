@@ -12,6 +12,7 @@ window.onresize = () => {
     }
 };
 
+// Footer year and last modified update
 const date = new Date();
 const year = date.getFullYear();
 const lastModified = document.lastModified;

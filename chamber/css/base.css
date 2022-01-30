@@ -33,8 +33,9 @@ a {
     font-weight: 700;
     transition: 0.5s;
 }
-.top-bar-nav a.hamburger::before {
-    content: "O ";
+
+.top-bar-nav a.hamburger::before { /* TODO: This needs to be udpated to have the hamburger menu symbol */
+    content: "Menu ";
 }
 .responsive a.hamburger {
     color: white;
