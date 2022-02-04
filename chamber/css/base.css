@@ -3,6 +3,10 @@
 header {
     width: 100%;
 }
+main {
+    display: flex;
+    flex-direction: column;
+}
 h1 {
     font-family: 'Merriweather', serif;
 }

@@ -1,0 +1,13 @@
+Basic layout of the page
+* Header
+	* Logo
+	* Nav with 6 links
+* Main
+	* Hero image
+	* Call to action
+	* News
+	* Events
+	* Weather
+	* Join
+	* 2-3 company spotlights
+* Footer
