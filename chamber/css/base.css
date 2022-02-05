@@ -18,17 +18,17 @@ nav {
 a {
     font-family: 'Raleway', sans-serif;
 }
-.top-bar-nav {
+.link-list {
     list-style: none;
     padding: 0;
 }
-.top-bar-nav li:first-child{
+.link-list li:first-child{
     display: block;
 }
-.top-bar-nav li {
+.link-list li {
     display: none;
 }
-.top-bar-nav a {
+.link-list a {
     display: block;
     padding: 0.75rem;
     text-align: left;
@@ -38,7 +38,7 @@ a {
     transition: 0.5s;
 }
 
-.top-bar-nav a.hamburger::before { /* TODO: This needs to be udpated to have the hamburger menu symbol */
+.link-list a.hamburger::before { /* TODO: This needs to be udpated to have the hamburger menu symbol */
     content: "Menu ";
 }
 .responsive a.hamburger {
