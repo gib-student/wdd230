@@ -1,24 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather&family=Raleway:wght@300&family=Roboto+Mono&display=swap');
-
+/* Header */
 header {
     width: 100%;
+    background-color: #abc8c0;
 }
+#logo {
+    width: 150px;    
+}
+.top {
+    display: flex;
+}
+.headers {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.main-header {
+    font-family: 'Merriweather', serif;
+    font-size: 1.4em;
+}
+.main-subheader {
+    font-size: 0.9em;
+    margin-top: -10px;
+}
+.top-bar-nav {
+    width: 50px;
+    margin: 0;
+}
+.social-nav {
+}
+.social-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* border-style: solid; */
+    margin-left: -10px;
+    padding: 0;
+}
+#date {
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    background-color: grey;
+}
+.social-img {
+    width: 30px;
+    margin: 3px;
+}
+
+/* Main */
 main {
     display: flex;
     flex-direction: column;
 }
-h1 {
+h2 {
     font-family: 'Merriweather', serif;
 }
-nav {
-    margin: 0 auto;
-    background-color: #abc8c0;
+.welcome {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+h3 {
+    font-family: 'Merriweather', serif;
+}
+li {
     font-family: 'Raleway', sans-serif;
 }
 a {
     font-family: 'Raleway', sans-serif;
 }
+.hero {
+    position: relative;
+    text-align: center;
+}
+.call-to-action {
+    position: absolute;
+    font-size: 1.3em;
+    bottom: 16px;
+    left: 16px;
+}
+button {
+    font-family: 'Raleway', sans-serif;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+img {
+    font-family: 'Raleway', sans-serif;
+}
+.hero-image{
+    max-width: 100%;
+}
+
+/* Hamburger menu */
+nav {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.hamburger-img {
+    max-width: 20px;
+}
 .link-list {
+    
     list-style: none;
     padding: 0;
 }
@@ -33,29 +118,15 @@ a {
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
-    color: black;
     font-weight: 700;
     transition: 0.5s;
 }
-
-.link-list a.hamburger::before { /* TODO: This needs to be udpated to have the hamburger menu symbol */
-    content: "Menu ";
-}
 .responsive a.hamburger {
     color: white;
-    background-color: black;
 }
 .responsive li {
     display: block;
 }
-.responsive a.hamburger::before {
-    content: "X ";
+.link-list a.hamburger::before {
 }
-p {
-    font-family: 'Raleway', sans-serif;
-}
-img {
-    font-family: 'Raleway', sans-serif;
-}
-
 /* Website whic helped me with hamburger menu: https://codepen.io/blazzard-jason/pen/gmGxaj/ */

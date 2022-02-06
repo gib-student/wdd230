@@ -1,6 +1,6 @@
 // Hamburger menu
 const hambutton = document.querySelector('.hamburger');
-const mainNav = document.querySelector('.top-bar-nav')
+const mainNav = document.querySelector('.link-list')
 
 hambutton.addEventListener('click', () => 
     {mainNav.classList.toggle('responsive')}, false);

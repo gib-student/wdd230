@@ -1,16 +1,17 @@
 /* Media query for medium+ views */
 @media only screen and (min-width: 32.5em) {
-    .top-bar-nav {
+    /* Hamburger Menu */
+    .link-list {
         display: flex;
     }
-    .top-bar-nav li {
+    .link-list li {
         display: block;
         flex: 1 1 auto;
     }
-    .top-bar-nav a {
+    .link-list a {
         text-align: center;
     }
-    .top-bar-nav li:first-child {
+    .link-list li:first-child {
         display: none;
     }
 }
