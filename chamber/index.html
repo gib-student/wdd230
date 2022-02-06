@@ -34,61 +34,104 @@
                 <ul class='social-list'>
                     <li><a class='social-media-1' href='#'>
                         <img class='social-1-img social-img' src="images/facebook-img.png" alt='facebook'></a></li>
-                    <li><a class='social-media-2' href='#'>
-                        <img class="social-2-img  social-img" src="images/twitter.png" alt="twitter">
-                    </a></li>
-                </ul>
-            </nav>
-        </div>
-        <p id='date'>date</p>
-    </header>
-    <main>
-        <!-- Should include hero image and call to action, news, event(s),
-        weather, join, and 2-3 company spotlights -->
-        <div class="hero">
+                        <li><a class='social-media-2' href='#'>
+                            <img class="social-2-img  social-img" src="images/twitter.png" alt="twitter">
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p id='date'>date</p>
+        </header>
+        <main>
+            <!-- Should include hero image and call to action, news, event(s),
+                weather, join, and 2-3 company spotlights -->
+                <div class="hero">
             <img class='hero-image' src="images/Mason water tower.png" alt='Hero image'>
             <h2 class='welcome'>Welcome to Mason</h2>
             <button class='call-to-action' type="submit">Join the Chamber</button>    
         </div>
-        <div id='news'>
-            <h3 class='news-title'>News</h3>
-            <ul class='news-items'>
-                <li>Item 1</li>
-                <li>Item 2</li>
-            </ul>
+        <div id='events'>
+            <h2 class='events-title'>Ribbon Cutting</h2>
+            <h4 class="events-subtitle">💎The Diamond Shack</h4>
+            <p class="events-paragraph">Join us for the grand opening of the 
+                Diamond Shack, Thursday at 1:00 p.m.
+            </p>
+            <a class="events-link" href="#">more info ...</a>
         </div>
         <div id='weather'>
-            <h3 class='weather-title'>Weather</h3>
-            <div class='weather-module'></div>
+            <h2 class='weather-title'>Weather</h2>
+            <div class='weather-module'>
+                <div class="weather-main-content">
+                    <img class="weather-img" src="https://via.placeholder.com/100" alt="">
+                    <h2 class="temp">33&#176;C</h2>
+                </div>
+                <h3 class="weather-description">Party Cloudy</h3>
+                <hr class="weather-line">
+                <div class="wind-speed">
+                    <p class="wind-speed-text">Wind Speed:</p>
+                    <p class="wind-speed-value">2.5 km/h</p>
+                </div>
+                <div class="wind-chill">
+                    <p class="wind-chill-text">Wind Chill:</p>
+                    <p class="wind-chill-value">N/A</p>
+                </div>
+            </div>
+        </div>
+        <div id='news'>
+            <h2 class='news-title'>News Release</h2>
+            <p class="news-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed eget erat eget nisl elementum sagittis. Aenean lobortis 
+                metus non justo facilisis, ac lobortis tellus faucibus. Vivamus 
+                eu leo ligula. Phasellus pretium ipsum ut metus dapibus interdum. 
+                In ut consectetur lectus. Quisque laoreet nunc nec ligula 
+                malesuada, nec lacinia justo hendrerit. Fusce neque orci, 
+                semper a enim sit amet, euismod scelerisque arcu. Cras ultrices 
+                libero ex, vitae congue nulla pellentesque egestas. 
+            </p>
         </div>
         <div id='company-spotlights'>
-            <h3 class='spotlights-title'>Company Spotlights</h3>
-            <ul class='spotlights-list'>
-                <li>Company 1</li>
-                <li>Company 2</li>
-                <li>Company 3</li>
-            </ul>
-        </div>
-        <div id='events'>
-            <h3 class='events-title'>Events</h3>
-            <ul class='events-items'>
-                <li>Item 1</li>
-                <li>Item 2</li>
-            </ul>
-        </div>
-        <div id='join'>
-            <button class='join-btn' type='submit'>Join today!</button>
+            <div class="spotlight-1">
+                <h2 class='spotlight-title-1'>Thankful Transport</h2>
+                <img class="spotlight-img-1" src="https://via.placeholder.com/200" alt="Transport truck">
+                <p class="spotlight-desc-1"><i><b>"We get it there for you!"</b></i></p>
+                <hr class="spotlight-line-1">
+                <div class="spotlight-contact-1">
+                    <p class="spotlight-email-1">hello@thankfultransport.com</p>
+                    <p class="spotlight-phone-1">+999-9999-9999</p>
+                    <p class="spotlight-url-1">Website</p>
+                </div>
+            </div>
+            <div class="spotlight-2">
+                <h2 class='spotlight-title-2'>Code Primera</h2>
+                <img class="spotlight-img-2" src="https://via.placeholder.com/200" alt="Transport truck">
+                <p class="spotlight-desc-2"><i><b>An after school coding 
+                    instructional program.</b></i></p>
+                <hr class="spotlight-line-2">
+                <div class="spotlight-contact-2">
+                    <p class="spotlight-email-2">contact@codeprimera.com</p>
+                    <p class="spotlight-phone-2">+999-9999-9999</p>
+                    <p class="spotlight-url-2">Website</p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
-        <img id='logo-footer' src='https://via.placeholder.com/60' alt='City of Mason logo'>
+        <img id='logo-footer' src='images/logo.png' 
+            alt='City of Mason logo'>
+        <h2 class="footer-headline">Mason Chamber of Commerce</h2>
         <ul id='contact'>
-
+            <p class="address">316 W Main St, Mason, OH 45040</p>
+            <p class="email">info@mason.org</p>
+            <p class="city-phone">+(513) 229-8538</p>
+            <a id='map' href=''>📍 Location map</a>
         </ul>
-        <a id='map' href=''>Find us on a map</a>
-        <p id='copyright'>&copy; | <span id='copyrightYear'>-</span> | City of Mason 
-        Chamber of Commerce | Trevor Gibb | WDD 230 Project | Last Modified: 
-        <span id='modified'>-</span></p>
+        <hr class="footer-line">
+        <div class="bottom">
+            <p id='copyright'>&copy; | <span id='copyrightYear'>-</span> | City of Mason 
+            Chamber of Commerce | Trevor Gibb | WDD 230 Project | Last Modified: 
+            <span id='modified'>-</span></p>
+        </div>
     </footer>
 </body>
 <script src='js/index.js'></script>
