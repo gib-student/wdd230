@@ -4,10 +4,6 @@ header {
     width: 100%;
     background-color: #abc8c0;
 }
-#logo {
-    width: 150px;
-    max-height: 70px;
-}
 .top {
     display: flex;
 }
@@ -25,17 +21,14 @@ header {
     margin-top: -10px;
 }
 .top-bar-nav {
-    width: 80px;
     margin: 0;
     max-width: 50px;
-}
-.social-nav {
 }
 .social-list {
     display: flex;
     align-items: center;
     list-style: none;
-    margin-left: -10px;
+    margin-left: -10px; 
     padding: 0;
 }
 #date {
@@ -53,6 +46,14 @@ header {
 main {
     display: flex;
     flex-direction: column;
+}
+.logo {
+    width: 150px;
+    max-height: 70px;
+}
+
+.hero-img-2 {
+    display: none;
 }
 /* Events */
 #events {
@@ -126,11 +127,6 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#logo-footer {
-    width: 150px;
-    max-height: 70px;
-}
-
 h2 {
     font-family: 'Merriweather', serif;
 }

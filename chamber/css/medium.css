@@ -1,21 +1,9 @@
 /* Media query for medium+ views */
-@media only screen and (min-width: 32.5em) {
-    body {
-        margin-right: 20%;
-        margin-left: 20%;
-    }
-    /* Hamburger Menu */
-    .link-list {
-        display: flex;
-    }
-    .link-list li {
-        display: block;
-        flex: 1 1 auto;
-    }
-    .link-list a {
-        text-align: center;
-    }
-    .link-list li:first-child {
+@media only screen and (min-width: 800px) {
+    .hero-img-1 {
         display: none;
+    }       
+    .hero-img-2 {
+        display: block;
     }
 }

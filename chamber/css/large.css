@@ -1,0 +1,56 @@
+/* Media query for large views */
+@media only screen and (min-width: 1000px) {
+    body {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    /* Header */
+    #logo {
+        order: 1;
+        /* border-style: solid; */
+    }
+    .headers {
+        order: 2;
+        /* border-style: solid; */
+    }
+    .top-bar-nav {
+        max-width: fit-content;
+        order: 3;
+        /* border-style: solid; */
+    }
+    .social-nav {
+        order: 4;
+        /* border-style: solid; */
+    }
+    .top {
+        /* border-style: solid; */
+        align-items: center;
+    }
+    #logo-header {
+        /* border-style: solid; */
+        margin-left: 100px;
+    }
+    .link-list {
+        text-align: center;
+    }
+    .main-subheader {
+        font-size: 1.3em;
+    }
+    .social-nav {
+        
+    }
+    /* Hamburger Menu */
+    .link-list {
+        display: flex;
+    }
+    .link-list li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .link-list a {
+        text-align: center;
+    }
+    .link-list li:first-child {
+        display: none;
+    }
+}
