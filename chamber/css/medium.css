@@ -1,9 +1,73 @@
 /* Media query for medium+ views */
 @media only screen and (min-width: 800px) {
+    
+    h3 {
+        font-size: 1.7em;
+    }
+    h4 {
+        font-size: 1.3em;
+    }
+    p, li, a, button, img {font-size: 1.6em;}
+    /* Header */
+    header {
+        align-items: center;
+    }
+    .social-img {
+        width: 40px;
+    }
+    .logo {
+        width: auto;
+        height: 100px;
+    }
+    #headers {
+        text-align: center;
+        /* border-style: solid; */
+    }
+    .main-header {
+        display: block;
+        /* border-style: solid; */
+        margin: auto;
+        font-size: 2.5em;
+    }
+    .main-subheader {
+        font-size: 1.6em;
+        width: fit-content;
+        margin: auto;
+        /* border-style: solid; */
+    }
+    .hamburger-img {
+        width: 35px;
+    }
+    /* Main */
     .hero-img-1 {
         display: none;
     }       
     .hero-img-2 {
         display: block;
+    }
+    .events-weather-bar {
+        display: flex;
+    }
+    #events {
+        align-items: center;
+        width: 60%;
+    }
+    #weather {
+        width: 40%;
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+    .call-to-action {
+        bottom: 25px;
+        left: 25px;
+        font-size: 2em;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    #join {
+        padding-top: 35px;
+    }
+    .join-btn {
+        padding: 20px;
     }
 }

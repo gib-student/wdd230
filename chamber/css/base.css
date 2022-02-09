@@ -1,179 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather&family=Raleway:wght@300&family=Roboto+Mono&display=swap');
+
+body, button { /* For some reason button doesn't inherit from body */
+    font-family: 'Raleway', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+h3 {
+    font-size: 1.2em;
+}
+button {
+    font-size: 1em;
+}
 /* Header */
-header {
-    width: 100%;
+#top {
     background-color: #abc8c0;
 }
-.top {
+header {
     display: flex;
+    justify-content:space-around;
+    padding: 5px;
+    padding-top: 13px;
+    /* border-style: solid; */
 }
-.headers {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
+.hamburger-img {
+    width: 20px;
+}
+.link-list {
+    /* border-style: solid; */
+    margin: 0;
+}
+.logo {
+    width: 140px;
+    /* border-style: solid; */
 }
 .main-header {
-    font-family: 'Merriweather', serif;
-    font-size: 1.4em;
+    display: none;
 }
 .main-subheader {
-    font-size: 0.9em;
-    margin-top: -10px;
+    font-size: 1em;
+    margin-left: -25px;
+    /* border-style: solid; */
+    width: 100px;
 }
-.top-bar-nav {
-    margin: 0;
-    max-width: 50px;
-}
-.social-list {
+.social {
     display: flex;
-    align-items: center;
-    list-style: none;
-    margin-left: -10px; 
-    padding: 0;
-}
-#date {
-    margin: 20px;
-    padding: 5px;
-    text-align: center;
-    background-color: grey;
+    flex-direction: column;
+    border-style: solid;
+    /* box-sizing: border-box; */
 }
 .social-img {
     width: 30px;
-    margin: 3px;
 }
-
-/* __Main__ */
-main {
-    display: flex;
-    flex-direction: column;
+.social-img:hover {
+    box-shadow: 1x 4px 2px 0px #969696;
 }
-.logo {
-    width: 150px;
-    max-height: 70px;
-}
-
-.hero-img-2 {
-    display: none;
-}
-/* Events */
-#events {
+#date {
     text-align: center;
-    justify-content: center;
-    background-color: #5899e2;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    background-color: grey;
+    padding: 5px;
+    margin: 0;
+    /* border-style: solid; */
 }
-#news {
-    text-align: center;
-}
-/* Weather */
-#weather {
-    background-color: #5899e2;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.weather-title {
-    text-align: center;
-}
-.weather-main-content {
-    display: flex;
-    justify-content: space-around;
-}
-.weather-description {
-    text-align: center;
-}
-.wind-speed {
-    display: flex;
-    justify-content: space-around;
-}
-.wind-chill {
-    display: flex;
-    justify-content: space-around;
-}
-/* News */
-#news {
-    background-color: #5899e2;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-/*  Company spotlights */
-#company-spotlights {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #5899e2;
-}
-.spotlight-1 {
-    text-align: center;
-    background-color: #5899e2;
-    margin: 7px 10px 0px 10px;
-    border-style: solid;
-}
-.spotlight-2 {
-    text-align: center;
-    background-color: #5899e2;
-    margin: 0px 10px 7px 10px;
-    border-style: solid
-}
-/* Footer */
-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #abc8c0;
-    align-items: center;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-h2 {
-    font-family: 'Merriweather', serif;
-}
-.welcome {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-h3 {
-    font-family: 'Merriweather', serif;
-}
-li {
-    font-family: 'Raleway', sans-serif;
-}
-a {
-    font-family: 'Raleway', sans-serif;
-}
-.hero {
-    position: relative;
-    text-align: center;
-}
-.call-to-action {
-    position: absolute;
-    font-size: 1.3em;
-    bottom: 16px;
-    left: 16px;
-}
-button {
-    font-family: 'Raleway', sans-serif;
-}
-p {
-    font-family: 'Raleway', sans-serif;
-}
-img {
-    font-family: 'Raleway', sans-serif;
-}
-.hero-image{
-    max-width: 100%;
-}
-
 /* Hamburger menu */
 nav {
     margin: 0 auto;
-    font-family: 'Raleway', sans-serif;
-}
-.hamburger-img {
-    max-width: 20px;
 }
 .link-list {
     list-style: none;
@@ -200,6 +91,118 @@ nav {
 .responsive li {
     display: block;
 }
-.link-list a.hamburger::before {
+/* Website whic helped me with hamburger menu: https://codepen.io/blazzard-
+jason/pen/gmGxaj/ */
+/* __Main__ */
+main {
+    display: flex;
+    flex-direction: column;
 }
-/* Website whic helped me with hamburger menu: https://codepen.io/blazzard-jason/pen/gmGxaj/ */
+.welcome {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.main-box {
+    background-color: #5899e2;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+}
+/* Hero */
+#hero {
+    position: relative;
+    text-align: center;
+}
+.hero-img-2 {
+    display: none;
+}
+.call-to-action {
+    position: absolute;
+    font-size: 1.3em;
+    bottom: 16px;
+    left: 16px;
+    border-radius: 5px;
+}
+.hero-image{
+    max-width: 100%;
+}
+/* Events */
+#events {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+/* Weather */
+.weather-title {
+    text-align: center;
+}
+.weather-main-content {
+    display: flex;
+    justify-content: space-around;
+}
+.weather-description {
+    text-align: center;
+}
+.wind-speed {
+    display: flex;
+    justify-content: space-around;
+}
+.wind-chill {
+    display: flex;
+    justify-content: space-around;
+}
+/* News */
+#news {
+    text-align: center;
+}
+/*  Company spotlights */
+.spotlight-1 {
+    text-align: center;
+    margin: 7px 10px 0px 10px;
+    border-style: solid;
+}
+.spotlight-2 {
+    text-align: center;
+    margin: 7px 10px 7px 10px;
+    border-style: solid
+}
+/* Join us */
+#join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    /* border-style: solid; */
+}
+.join-btn {
+    font-size: 1.5em;
+    width: 70%;
+    padding: 10px;
+    /* border-style: solid; */
+}
+.join-description {
+    text-align: center;
+    /* border-style: solid; */
+}
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #abc8c0;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border-style: solid; */
+}
+#logo-footer {
+    margin-top: 20px;
+}
+#contact {
+    /* border-style: solid; */
+    text-align: center;
+}
+.bottom {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}

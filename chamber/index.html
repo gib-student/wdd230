@@ -1,88 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mason Deerfield Chamber</title>
-    <meta name='description' content='Homepage for the City of Mason and Deerfield Chamber 
-    of Commerce. For current and prospective business owners, and those looking
+    <title>Mason Chamber</title>
+    <meta name='description' content='Homepage for the City of Mason Chamber 
+        of Commerce. For current and prospective business owners, and those looking
         to do commerce in Mason and Deerfield Townships.'>
-        <link rel='stylesheet' href='css/base.css'> <!--For mobile-->
+    <link rel='stylesheet' href='css/base.css'> <!--For mobile-->
     <link rel='stylesheet' href='css/medium.css'> <!--Medium views like tablet-->
     <link rel='stylesheet' href='css/large.css'> <!--Large views like desktop-->
 </head>
 <body>
-    <header>
-        <div class="top">
-            <nav class='top-bar-nav'>
-                <ul class="link-list">  
-                    <li><a class='hamburger'><img class='hamburger-img' alt='menu' src="images/hamburger-icon.png"></a></li>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>Discover</a></li>
-                    <li><a href='#'>Directory</a></li>
-                    <li><a href='#'>Join</a></li>
-                    <li><a href='#'>Contact</a></li>
-                </ul>
-            </nav>
+    <div id="top">
+        <header>
             <img id='logo-header' class="logo" src='images/logo.png' 
-            alt='City of Mason logo'>
-            <div class="headers">
-                <h1 class='main-header'></h1>
+                alt='City of Mason logo'>
+            <div id="headers">
+                <h1 class="main-header">Mason</h1>
                 <h2 class='main-subheader'>Chamber of Commerce</h2>
             </div>
-            <nav class='social-nav'>
-                <ul class='social-list'>
-                    <li><a class='social-media-1' href='#'>
-                        <img class='social-1-img social-img' src="images/facebook-img.png" alt='facebook'></a></li>
-                        <li><a class='social-media-2' href='#'>
-                            <img class="social-2-img  social-img" src="images/twitter.png" alt="twitter">
-                        </a></li>
-                    </ul>
-                </nav>
+            <div class="social">
+                <a class='social-media-1' href='#'>
+                    <img class='social-1-img social-img' 
+                    src="images/facebook-img.png" alt='facebook'></a>
+                <a class='social-media-2' href='#'>
+                    <img class="social-2-img  social-img" 
+                    src="images/twitter.png" alt="twitter"></a>  
             </div>
-            <p id='date'>date</p>
         </header>
-        <main>
-            <!-- Should include hero image and call to action, news, event(s),
-                weather, join, and 2-3 company spotlights -->
-                <div class="hero">
+        <nav class='top-bar-nav'>
+            <ul class="link-list">  
+                <li><a class='hamburger'><img class='hamburger-img' 
+                    alt='menu' src="images/hamburger-icon.png"></a></li>
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>Discover</a></li>
+                <li><a href='#'>Directory</a></li>
+                <li><a href='#'>Join</a></li>
+                <li><a href='#'>Contact</a></li>
+            </ul>
+        </nav>
+        <p id='date'>date</p>
+    </div>
+    <div id="msg-box">
+        <p id="msg">Come join us for the chamber meet and greet Wednesday at 
+            7:00 p.m.</p>
+    </div>
+    <main>
+        <div id="hero">
             <img class='hero-image hero-img-1' 
                 src="images/Mason water tower.png" alt='Hero image'>
             <img class="hero-image hero-img-2" 
                 src="images/Mason water tower-medium.png" alt="Hero image">
-            <h2 class='welcome'>Welcome to Mason</h2>
+            <h3 class='welcome'>Welcome to Mason</h3>
             <button class='call-to-action' type="submit">Join the Chamber</button>    
         </div>
-        <div id='events'>
-            <h2 class='events-title'>Ribbon Cutting</h2>
-            <h4 class="events-subtitle">💎The Diamond Shack</h4>
-            <p class="events-paragraph">Join us for the grand opening of the 
-                Diamond Shack, Thursday at 1:00 p.m.
-            </p>
-            <a class="events-link" href="#">more info ...</a>
-        </div>
-        <div id='weather'>
-            <h2 class='weather-title'>Weather</h2>
-            <div class='weather-module'>
-                <div class="weather-main-content">
-                    <img class="weather-img" src="https://via.placeholder.com/100" alt="">
-                    <h2 class="temp">33&#176;C</h2>
-                </div>
-                <h3 class="weather-description">Party Cloudy</h3>
-                <hr class="weather-line">
-                <div class="wind-speed">
-                    <p class="wind-speed-text">Wind Speed:</p>
-                    <p class="wind-speed-value">2.5 km/h</p>
-                </div>
-                <div class="wind-chill">
-                    <p class="wind-chill-text">Wind Chill:</p>
-                    <p class="wind-chill-value">N/A</p>
-                </div>
-            </div>
-        </div>
-        <div id='news'>
-            <h2 class='news-title'>News Release</h2>
+        <div id='news' class="main-box">
+            <h3 class='news-title'>News Release</h3>
             <p class="news-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Sed eget erat eget nisl elementum sagittis. Aenean lobortis 
@@ -94,9 +69,9 @@
                 libero ex, vitae congue nulla pellentesque egestas. 
             </p>
         </div>
-        <div id='company-spotlights'>
+        <div id='company-spotlights' class="main-box">
             <div class="spotlight-1">
-                <h2 class='spotlight-title-1'>Thankful Transport</h2>
+                <h3 class='spotlight-title-1'>Thankful Transport</h3>
                 <img class="spotlight-img-1" src="https://via.placeholder.com/200" alt="Transport truck">
                 <p class="spotlight-desc-1"><i><b>"We get it there for you!"</b></i></p>
                 <hr class="spotlight-line-1">
@@ -107,7 +82,7 @@
                 </div>
             </div>
             <div class="spotlight-2">
-                <h2 class='spotlight-title-2'>Code Primera</h2>
+                <h3 class='spotlight-title-2'>Code Primera</h3>
                 <img class="spotlight-img-2" src="https://via.placeholder.com/200" alt="Transport truck">
                 <p class="spotlight-desc-2"><i><b>An after school coding 
                     instructional program.</b></i></p>
@@ -119,22 +94,58 @@
                 </div>
             </div>
         </div>
+        <section class="events-weather-bar">
+            <div id='events' class="main-box">
+                <h3 class='events-title'>Ribbon Cutting</h3>
+                <h4 class="events-subtitle">💎The Diamond Shack</h4>
+                <p class="events-paragraph">Join us for the grand opening of the 
+                    Diamond Shack, Thursday at 1:00 p.m.
+                </p>
+                <a class="events-link" href="#">more info ...</a>
+            </div>
+            <div id='weather' class="main-box">
+                <h3 class='weather-title'>Weather</h3>
+                <div class='weather-module'>
+                    <div class="weather-main-content">
+                        <img class="weather-img" src="https://via.placeholder.com/100" alt="">
+                        <h3 class="temp">33&#176;C</h3>
+                    </div>
+                    <h3 class="weather-description">Party Cloudy</h3>
+                    <hr class="weather-line">
+                    <div class="wind-speed">
+                        <p class="wind-speed-text">Wind Speed:</p>
+                        <p class="wind-speed-value">2.5 km/h</p>
+                    </div>
+                    <div class="wind-chill">
+                        <p class="wind-chill-text">Wind Chill:</p>
+                        <p class="wind-chill-value">N/A</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="join" class="main-box">
+            <button class="join-btn" type="submit">Join us!</button>
+            <p class="join-description">
+                Discover how to join the chamber of commerce and how it will 
+                benefit your organization!
+            </p>
+        </div>
     </main>
     <footer>
-        <img id='logo-footer' class="logo" src='images/logo.png' 
+        <img id='logo-footer' class="logo" src='images/logo.png'
             alt='City of Mason logo'>
-        <h2 class="footer-headline">Mason Chamber of Commerce</h2>
-        <ul id='contact'>
+        <h3 class="footer-headline">Mason Chamber of Commerce</h3>
+        <div id="contact">
             <p class="address">316 W Main St, Mason, OH 45040</p>
             <p class="email">info@mason.org</p>
             <p class="city-phone">+(513) 229-8538</p>
-            <a id='map' href=''>📍 Location map</a>
-        </ul>
+            <a id='map' href='#'>📍 Location map</a>
+        </div>
         <hr class="footer-line">
         <div class="bottom">
-            <p id='copyright'>&copy; | <span id='copyrightYear'>-</span> | City of Mason 
-            Chamber of Commerce | Trevor Gibb | WDD 230 Project | Last Modified: 
-            <span id='modified'>-</span></p>
+            <p id='copyright'>&copy; | <span id='copyrightYear'>-</span> | 
+                City of Mason Chamber of Commerce | Trevor Gibb | 
+                WDD 230 Project | Last Modified: <span id='modified'>-</span></p>
         </div>
     </footer>
 </body>

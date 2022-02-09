@@ -3,47 +3,38 @@
     body {
         margin-right: 20%;
         margin-left: 20%;
+        color: white;
     }
+    h1, h2 {color: black;}
+    p, li, a, button, img {font-size: 1.4em;}    
+    h2 {font-size: 3em;}
+    h3 {font-size: 2.3em;}
+    h4 {font-size: 1.8em;}
     /* Header */
-    #logo {
-        order: 1;
-        /* border-style: solid; */
+    header {
+        height: auto;
     }
-    .headers {
-        order: 2;
-        /* border-style: solid; */
+    .social {
+        flex-direction: row;
+    }
+    .social-img {
+        width: 50px;
+        margin: 10px;
     }
     .top-bar-nav {
         max-width: fit-content;
-        order: 3;
         /* border-style: solid; */
     }
-    .social-nav {
-        order: 4;
-        /* border-style: solid; */
-    }
-    .top {
-        /* border-style: solid; */
-        align-items: center;
-    }
-    #logo-header {
-        /* border-style: solid; */
-        margin-left: 100px;
-    }
-    .link-list {
-        text-align: center;
-    }
-    .main-subheader {
-        font-size: 1.3em;
-    }
-    .social-nav {
-        
+    .main-header {
+        font-size: 5em;
     }
     /* Hamburger Menu */
     .link-list {
         display: flex;
+        color: #5899e2;
     }
     .link-list li {
+        
         display: block;
         flex: 1 1 auto;
     }
@@ -52,5 +43,11 @@
     }
     .link-list li:first-child {
         display: none;
+    }
+    /* Main */
+    .welcome {
+        color: black;
+        font-size: 3.4em;
+        left: 70px;
     }
 }
