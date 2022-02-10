@@ -6,13 +6,17 @@
         color: white;
     }
     h1, h2 {color: black;}
-    p, li, a, button, img {font-size: 1.4em;}    
+    p, li, a, button, img {font-size: 1.yem;}    
     h2 {font-size: 3em;}
     h3 {font-size: 2.3em;}
     h4 {font-size: 1.8em;}
     /* Header */
     header {
+        min-height: 200px;
+    }
+    .logo {
         height: auto;
+        width: 300px;
     }
     .social {
         flex-direction: row;
@@ -23,10 +27,20 @@
     }
     .top-bar-nav {
         max-width: fit-content;
-        /* border-style: solid; */
+        background-color: white;
+        /* border-style: solid; */  
+    }
+    .link-list li:hover {
+        background-color: black;
+    }
+    .link-list a:hover {
+        color: white;
     }
     .main-header {
         font-size: 5em;
+    }
+    #date {
+        /* font-size: 2em; */
     }
     /* Hamburger Menu */
     .link-list {
@@ -45,9 +59,44 @@
         display: none;
     }
     /* Main */
+    main {
+        display: grid;
+        grid-template-rows: repeat(3, 500px);
+        grid-template-columns: 30% 40% 40%;
+    }
+    .main-box {
+        margin: auto;
+        padding: auto;
+    }
     .welcome {
         color: black;
         font-size: 3.4em;
         left: 70px;
+    }
+    #hero {
+        grid-area: 1/2/span 2/span 1;
+    }
+    .events-weather-bar {
+        display: block;
+        grid-area: 1/1/span 2/span 1;
+    }
+    #join {
+        grid-area: 3/1/span 1/span 1;
+    }
+    #events {
+        width: auto;
+        margin: auto;
+        padding: 0;
+    }
+    #weather {
+        width: auto;
+        margin: auto;
+        padding: auto;
+    }
+    .hero-img-1 {
+        display: block;
+    }
+    .hero-img-2 {
+        display: none;
     }
 }

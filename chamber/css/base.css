@@ -46,8 +46,6 @@ header {
 .social {
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    /* box-sizing: border-box; */
 }
 .social-img {
     width: 30px;
@@ -82,7 +80,6 @@ nav {
     text-align: left;
     text-decoration: none;
     font-weight: 700;
-    transition: 0.5s;
 }
 .responsive a.hamburger {
     color: white;
@@ -102,7 +99,7 @@ main {
     position: absolute;
     top: 8px;
     left: 16px;
-}
+}   
 .main-box {
     background-color: #5899e2;
     margin: 10px 0px 10px 0px;
