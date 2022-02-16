@@ -39,23 +39,40 @@
         width: 35px;
     }
     /* Main */
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+    }
+    #news {
+        grid-column: 1/7;
+        grid-row: 2/3;
+    }
+    #hero {
+        grid-column: 1/7;
+        grid-row: 1/2;
+    }
     .hero-img-1 {
         display: none;
     }       
     .hero-img-2 {
         display: block;
     }
-    .events-weather-bar {
-        display: flex;
+    #company-spotlights {
+        grid-column: 1/7;
+        grid-row: 3/4;
     }
     #events {
+        grid-column: 1/4;
+        grid-row: 5/6;
         align-items: center;
-        width: 60%;
     }
     #weather {
-        width: 40%;
-        margin-left: 10px;
-        margin-left: 10px;
+        grid-column: 4/7;
+        grid-row: 5/6;
+    }
+    #join {
+        grid-column: 1/7;
+        grid-row: 4/5;
     }
     .call-to-action {
         bottom: 25px;
@@ -63,9 +80,6 @@
         font-size: 2em;
         padding: 15px;
         border-radius: 10px;
-    }
-    #join {
-        padding-top: 35px;
     }
     .join-btn {
         padding: 20px;
