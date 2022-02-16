@@ -65,8 +65,7 @@
         grid-template-columns: 30% 40% 40%;
     }
     .main-box {
-        margin: auto;
-        padding: auto;
+        margin: 5px;
     }
     .welcome {
         color: black;
@@ -75,6 +74,10 @@
     }
     #hero {
         grid-area: 1/2/span 2/span 1;
+        margin: 5px;
+    }
+    #news {
+
     }
     .events-weather-bar {
         display: block;
@@ -85,13 +88,9 @@
     }
     #events {
         width: auto;
-        margin: auto;
-        padding: 0;
     }
     #weather {
         width: auto;
-        margin: auto;
-        padding: auto;
     }
     .hero-img-1 {
         display: block;
