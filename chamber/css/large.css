@@ -5,11 +5,23 @@
         margin-right: 20%;
         color: white;
     }
-    h1, h2 {color: black;}
-    p, li, a, button, img {font-size: 1.yem;}
-    h2 {font-size: 3em;}
-    h3 {font-size: 2.3em;}
-    h4 {font-size: 1.8em;}
+    h1 {
+        font-size: 3.3em;
+        color: black;
+    }
+    p, li, a, button, img {
+        font-size: 1em;
+    }
+    h2 {
+        color: black;
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    h4 {
+        font-size: 1.8em;
+    }
     /* Header */
     header {
         min-height: 200px;
@@ -36,22 +48,19 @@
     .link-list a:hover {
         color: white;
     }
-    .main-header {
-        font-size: 5em;
-    }
     #date {
-        /* font-size: 2em; */
+        font-size: 1.4em;
     }
     #msg-box {
         color: black;
     }
     /* Hamburger Menu */
     .link-list {
+        font-size: 1.5em;
         display: flex;
         color: #5899e2;
     }
     .link-list li {
-
         display: block;
         flex: 1 1 auto;
     }
@@ -71,7 +80,7 @@
     }
     .welcome {
         color: black;
-        font-size: 3.4em;
+        font-size: 1.7em;
         left: 70px;
     }
     #hero {
@@ -88,8 +97,7 @@
     .spotlight-1, .spotlight-2 {
         margin: auto;
     }
-    }
-    #join {
+    #join-now {
         display: block;
         grid-area: 3/1/4/2;
     }
@@ -101,10 +109,10 @@
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .hero-img-1 {
+    .hero-img-1-large {
         display: block;
     }
-    .hero-img-2 {
+    .hero-img-1, .hero-img-1-small, .hero-img-2 {
         display: none;
     }
 }

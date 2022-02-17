@@ -1,13 +1,17 @@
 /* Media query for medium+ views */
 @media only screen and (min-width: 800px) {
-    
+    h1 {
+        font-size: 2.5em;
+    }
     h3 {
         font-size: 1.7em;
     }
     h4 {
         font-size: 1.3em;
     }
-    p, li, a, button, img {font-size: 1.6em;}
+    p, li, a, button, img {
+        font-size: 1.6em;
+    }
     /* Header */
     header {
         align-items: center;
@@ -16,63 +20,58 @@
         width: 40px;
     }
     .logo {
-        width: auto;
         height: 100px;
+        width: auto;
     }
     #headers {
         text-align: center;
-        /* border-style: solid; */
     }
     .main-header {
         display: block;
-        /* border-style: solid; */
         margin: auto;
-        font-size: 2.5em;
     }
     .main-subheader {
         font-size: 1.6em;
-        width: fit-content;
         margin: auto;
-        /* border-style: solid; */
+        width: fit-content;
     }
     .hamburger-img {
         width: 35px;
     }
     /* Main */
     main {
-        display: grid;
         grid-template-columns: 2fr 1fr 1fr 2fr;
     }
     #weather {
-        /* grid-column: 4/7;
-        grid-row: 5/6; */
+        grid-column: 4/5;
+        grid-row: 5/6;
     }
     #join {
+        grid-column: 1/5;
+        grid-row: 4/5;  
+        display: block;
         text-align: center;
-        grid-column: 1/7;
-        grid-row: 3/4;
         border: solid black;
     }
     #hero {
-        grid-column: 1/7;
+        grid-column: 1/5;
         grid-row: 1/2;
     }
     #news {
-        grid-column: 1/7;
+        grid-column: 1/5;
         grid-row: 2/3;
     }
     #events {
+        grid-column: 1/4;
+        grid-row: 5/6;
         display: block;
-        /* grid-column: 1/4;
-        grid-row: 5/6; */
         align-items: center;
     }
     #company-spotlights {
-        display: none;
-        /* grid-column: 1/7;
-        grid-row: 3/4; */
+        grid-column: 1/5;
+        grid-row: 3/4;
     }
-    .hero-img-1 {
+    .hero-img-1, .hero-img-1-small, .hero-img-1-large {
         display: none;
     }       
     .hero-img-2 {
