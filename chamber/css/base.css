@@ -101,7 +101,6 @@ main {
     padding-bottom: 10px;
 }
 #hero {
-    position: relative;
     text-align: center;
 }
 #news {
@@ -110,6 +109,9 @@ main {
 }
 #join {
     display: none;
+}
+.photo-box {
+    position: relative;
 }
 .welcome {
     position: absolute;
@@ -124,7 +126,7 @@ main {
 .hero-image {
     max-width: 100%;
 }
-.hero-img-1, .hero-img-2, .hero-image-2-large {
+.hero-img-1, .hero-img-2, .hero-img-1-large {
     display: none;
 }
 .call-to-action {
@@ -157,10 +159,13 @@ main {
 #company-spotlights {
     grid-area: 4/1/5/2;
 }
-.spotlight-1, .spotlight-2 {
+.spotlight-1, .spotlight-2, .spotlight-3 {
     text-align: center;
     margin: 7px 10px 0 10px;
     border-style: solid;
+}
+.spotlight-3 {
+    display: none
 }
 /* Footer */
 footer {

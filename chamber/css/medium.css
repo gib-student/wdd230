@@ -1,7 +1,7 @@
 /* Media query for medium+ views */
 @media only screen and (min-width: 800px) {
     h1 {
-        font-size: 2.5em;
+        font-size: em;
     }
     h3 {
         font-size: 1.7em;
@@ -51,7 +51,7 @@
         grid-row: 4/5;  
         display: block;
         text-align: center;
-        border: solid black;
+        /* border: solid black; */
     }
     #hero {
         grid-column: 1/5;
