@@ -40,7 +40,6 @@
     .top-bar-nav {
         max-width: fit-content;
         background-color: white;
-        /* border-style: solid; */
     }
     .link-list li:hover {
         background-color: black;
@@ -71,8 +70,7 @@
         display: none;
     }
     /* Main */
-    main {
-        /* border: solid black; */
+    #home-main {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
     }
@@ -123,5 +121,20 @@
     }
     .hero-img-1, .hero-img-1-small, .hero-img-2 {
         display: none;
+    }
+    /* Discover page */
+    #discover-main {
+        border: solid black;
+        display: grid;  
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .town-img {
+        border: solid black;
+        justify-content: center;
+    }
+    .town-img-section {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 }

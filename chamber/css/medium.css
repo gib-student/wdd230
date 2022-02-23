@@ -1,8 +1,5 @@
 /* Media query for medium+ views */
 @media only screen and (min-width: 800px) {
-    h1 {
-        font-size: em;
-    }
     h3 {
         font-size: 1.7em;
     }
@@ -39,7 +36,7 @@
         width: 35px;
     }
     /* Main */
-    main {
+    #home-main {
         grid-template-columns: 2fr 1fr 1fr 2fr;
     }
     #weather {

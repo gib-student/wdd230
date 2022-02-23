@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather&family=Raleway:wght@300&family=Roboto+Mono&display=swap');
 
+/* Home page */
 body, button { /* For some reason button doesn't inherit from body */
     font-family: 'Raleway', sans-serif;
 }
@@ -87,7 +88,7 @@ nav {
 /* Website whic helped me with hamburger menu: https://codepen.io/blazzard-
 jason/pen/gmGxaj/ */
 /* __Main__ */
-main {
+#home-main {
     display: grid;
     grid-template-columns: 1fr;
 }
