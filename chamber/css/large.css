@@ -124,17 +124,51 @@
     }
     /* Discover page */
     #discover-main {
-        border: solid black;
-        display: grid;  
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .town-img {
-        border: solid black;
-        justify-content: center;
+        /* border: solid black; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .town-img-section {
-        justify-content: center;
-        text-align: center;
-        align-items: center;
+        margin: 2em;
+    }
+    .img-desc {
+        color: black;
+        font-size: 1.2em;
+    }
+    .disc-sect-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .disc-sect-2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .disc-sect-3 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .disc-sect-4 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .disc-sect-5 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .disc-sect-6 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .disc-sect-7 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .disc-sect-8 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .disc-sect-9 {
+        grid-column: 3/4;
+        grid-row: 3/4;
     }
 }

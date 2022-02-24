@@ -196,3 +196,21 @@ footer {
     padding-left: 10px;
     padding-right: 10px;
 }
+/* Discover page */
+.town-img-section {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    /* border: solid black; */
+}
+.town-img {
+    justify-content: center;
+    width: fit-content;
+    max-width: 100%;
+}
+hr {
+    border: .1px solid;
+    border-radius: 5px;
+}

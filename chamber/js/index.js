@@ -21,7 +21,7 @@ window.onresize = () => {
     }
 };
 // Chamber meet and greet message
-if (weekDay != 3) {
+if (weekDay != 2 || weekDay != 3) {
     document.getElementById('msg').style.display = 'none';
 }
 // Footer year and last modified update
@@ -30,9 +30,10 @@ document.querySelector('#copyrightYear').innerHTML = year;
 document.querySelector('#modified').innerHTML = lastModified;
 
 // Current date at top of page
-dateElement = document.querySelector('#date');
+let dateElement = document.querySelector('#date');
 
-months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
+let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 'August', 'September', 'October','November','December'];
-daysOfWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+let daysOfWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 dateElement.innerHTML = daysOfWeek[weekDay] + ', ' + monthDay + ' ' + months[month] + ' ' + year;
+''
