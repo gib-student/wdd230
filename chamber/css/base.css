@@ -211,8 +211,12 @@ footer {
     max-width: 100%;
 }
 .town-img:hover {
-    border: groove;
+    box-shadow: 5px 5px 5px 3px grey;
+    transition: .5s;
 }
+/* .town-img-section:hover {
+    background-color: grey;
+} */
 hr {
     border: .1px solid;
     border-radius: 5px;
