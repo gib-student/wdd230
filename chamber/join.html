@@ -15,17 +15,41 @@
         <h1>Join the Mason Chamber of Commerce</h1>
     </header>
     <main>
-        <section class="first-name-sec">
-            <h4 class="join-input-header">First name</h4>
-            <input class="first-name-input" type="text">
-        </section>
-        <section class="last-name-sec">
-            <h4 class="join-input-header">Last name</h4>
-            <input class="last-name-input" type="text">
-        </section>
-        <section>
-            
-        </section>
+        <form>
+            <label for="fname">
+                First name:<span class="required">*</span>
+            </label><br>
+            <input class="fname-input" type="text" name="fname"><br>
+            <label for="lname">
+                Last name:<span class="required">*</span>
+            </label><br>
+            <input class="lname-input" type="text" name="lname"><br>
+            <label for="title">
+                Title:
+            </label><br>
+            <input class="title-input" type="text" name="title"><br>
+            <label for="email">
+                Email address:<span class="required">*</span>
+            </label><br>
+            <input class="email-input" type="email" 
+            name="email" placeholder="johndoe@outlook.net"><br>
+            <label for="cell">
+                Cell phone number:<span class="required">*</span>
+            </label><br>
+            <input class="cell-input" type="tel" name="cell">
+            <label for="membership">
+                Membership level:<span class="required">*</span>
+            </label><br>
+            <select class="mem-lvl-select" name="membership">
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="elite">Elite</option>    
+            </select>
+            <label for="desc">
+                Business description:
+            </label>
+            <textarea class="desc" name="desc"></textarea>
+        </form>
         <button type="submit" class="join-submit-btn">
             Submit information
         </button>
@@ -33,6 +57,6 @@
     <footer>
 
     </footer>
-    <script src="js/test.js"></script>
+    <script src="js/regular_expression.js"></script>
 </body>
 </html>
