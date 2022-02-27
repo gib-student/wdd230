@@ -214,10 +214,17 @@ footer {
     box-shadow: 5px 5px 5px 3px grey;
     transition: .5s;
 }
-/* .town-img-section:hover {
-    background-color: grey;
-} */
 hr {
     border: .1px solid;
     border-radius: 5px;
+}
+/* Join.html */
+.join-body {
+    background-color: #abc8c0;
+    
+}
+.join-h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }

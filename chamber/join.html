@@ -5,58 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join</title>
-    <meta name="join" content="Join the City of Mason Chamber of Commerce!">
+    <meta name="description" content="Join the City of Mason Chamber of Commerce!">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 </head>
-<body>
-    <header>
-        <h1>Join the Mason Chamber of Commerce</h1>
+<body class="join-body">
+    <header class="join-header">
+        <h1 class="join-h1">Join the Mason Chamber of Commerce</h1>
     </header>
-    <main>
+    <main class="join-main">
         <form>
-            <label for="fname">
-                First name:<span class="required">*</span>
-            </label><br>
-            <input class="fname-input" type="text" name="fname"><br>
-            <label for="lname">
-                Last name:<span class="required">*</span>
-            </label><br>
-            <input class="lname-input" type="text" name="lname"><br>
-            <label for="title">
-                Title:
-            </label><br>
-            <input class="title-input" type="text" name="title"><br>
-            <label for="email">
-                Email address:<span class="required">*</span>
-            </label><br>
-            <input class="email-input" type="email" 
-            name="email" placeholder="johndoe@outlook.net"><br>
-            <label for="cell">
-                Cell phone number:<span class="required">*</span>
-            </label><br>
-            <input class="cell-input" type="tel" name="cell">
-            <label for="membership">
-                Membership level:<span class="required">*</span>
-            </label><br>
-            <select class="mem-lvl-select" name="membership">
-                <option value="basic">Basic</option>
-                <option value="premium">Premium</option>
-                <option value="elite">Elite</option>    
-            </select>
-            <label for="desc">
-                Business description:
-            </label>
-            <textarea class="desc" name="desc"></textarea>
+            <table>
+                <tr>
+                    <td>
+                        <label class="join-label" for="fname">
+                            First name:<span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <input class="fname-input" type="text" name="fname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="join-label" for="lname">
+                            Last name:<span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <input class="lname-input" type="text" name="lname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="join-label" for="title">
+                            Title:  
+                        </label>
+                    </td>
+                    <td>
+                        <input class="title-input" type="text" name="title"
+                        pattern="[a-z-\s]{7,}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="join-label" for="email">
+                            Email address:<span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <input class="email-input" type="email" 
+                        name="email" placeholder="johndoe@outlook.net">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="join-label" for="cell">
+                            Cell phone number:<span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <input class="cell-input" type="tel" name="cell">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="join-label" for="membership">
+                            Membership level:<span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <select class="mem-lvl-select" name="membership">
+                            <option value="np">Non-profit</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>    
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="join-label" for="desc">
+                            Business description:
+                        </label>
+                    </td>
+                    <td>
+                        <textarea class="desc" name="desc"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="join-label" for="time-loaded"></label>
+                    </td>
+                    <td>
+                        <input class="time-loaded" name="time-loaded" type="hidden">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" class="join-submit-btn">
+                            Submit information
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <p><span class="required">*</span> <b>Required fields</b></p>
         </form>
-        <button type="submit" class="join-submit-btn">
-            Submit information
-        </button>
+        <aside>
+            <h4 class="hmemb">Membership options</h4>
+            <p>NP Membership</p>
+            <ul>
+                <li>For non profit organizations and there is no fee</li>            
+            </ul>
+            <p>Bronze Membership</p>
+            <ul>
+                <li>15% discount on events</li>
+                <li>10% discount on advertising</li>
+                <li>Fee of $50/month</li>
+            </ul>
+            <p>Silver Membership</p>
+            <ul>
+                <li>25% discount on events</li>
+                <li>15% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>Fee of $100/month</li>
+            </ul>
+            <p>Gold Membership</p>
+            <ul>
+                <li>50% discount on events</li>
+                <li>50% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>5 free featured ads per year</li>
+                <li>1 free training per quarter</li>
+                <li>Fee of $250/month</li>
+            </ul>
+        </aside>
     </main>
-    <footer>
-
-    </footer>
-    <script src="js/regular_expression.js"></script>
+    <script src="js/join.js"></script>
 </body>
 </html>

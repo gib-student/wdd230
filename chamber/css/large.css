@@ -171,7 +171,31 @@
         grid-column: 3/4;
         grid-row: 3/4;
     }
-    .last-accessed {
+    p, ul, h4, h5, .last-accessed {
         color: black;
+    }
+    /* Join.html */
+    .join-body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .join-main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .hmemb {
+        padding: 0;
+        margin: 0;
+        font-size: 1.4em;
+    }
+    form, table, p, aside {
+        /* border: solid  black; */
+    }
+    label {
+        color: black;
+    }
+    .required {
+        color: red;
+        font-size: 1.7em;
     }
 }
