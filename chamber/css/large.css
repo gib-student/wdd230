@@ -21,6 +21,7 @@
     }
     h4 {
         font-size: 1.8em;
+        color: black;
     }
     /* Header */
     header {
@@ -171,7 +172,7 @@
         grid-column: 3/4;
         grid-row: 3/4;
     }
-    p, ul, h4, h5, .last-accessed {
+    p, ul, h5, .last-accessed {
         color: black;
     }
     /* Join.html */
@@ -187,9 +188,6 @@
         padding: 0;
         margin: 0;
         font-size: 1.4em;
-    }
-    form, table, p, aside {
-        /* border: solid  black; */
     }
     label {
         color: black;

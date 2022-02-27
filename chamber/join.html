@@ -24,7 +24,8 @@
                         </label>
                     </td>
                     <td>
-                        <input class="fname-input" type="text" name="fname">
+                        <input class="fname-input" type="text" name="fname"
+                        id="fname">
                     </td>
                 </tr>
                 <tr>
@@ -34,18 +35,19 @@
                         </label>
                     </td>
                     <td>
-                        <input class="lname-input" type="text" name="lname">
+                        <input class="lname-input" type="text" name="lname"
+                        id="lname">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label class="join-label" for="title">
+                        <label class="join-label" for="pos-title">
                             Title:  
                         </label>
                     </td>
                     <td>
-                        <input class="title-input" type="text" name="title"
-                        pattern="[a-z-\s]{7,}">
+                        <input class="title-input" type="text" name="pos-title"
+                        pattern="[a-z-\s]{7,}" id="pos-title">
                     </td>
                 </tr>
                 <tr>
@@ -56,7 +58,8 @@
                     </td>
                     <td>
                         <input class="email-input" type="email" 
-                        name="email" placeholder="johndoe@outlook.net">
+                        name="email" placeholder="johndoe@outlook.net"
+                        id="email">
                     </td>
                 </tr>
                 <tr>
@@ -66,7 +69,8 @@
                         </label>
                     </td>
                     <td>
-                        <input class="cell-input" type="tel" name="cell">
+                        <input class="cell-input" type="tel" name="cell"
+                        id="cell">
                     </td>
                 </tr>
                 <tr>
@@ -76,7 +80,8 @@
                         </label>
                     </td>
                     <td>
-                        <select class="mem-lvl-select" name="membership">
+                        <select class="mem-lvl-select" name="membership" 
+                        id="membership">
                             <option value="np">Non-profit</option>
                             <option value="bronze">Bronze</option>
                             <option value="silver">Silver</option>
@@ -91,25 +96,15 @@
                         </label>
                     </td>
                     <td>
-                        <textarea class="desc" name="desc"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label class="join-label" for="time-loaded"></label>
-                    </td>
-                    <td>
-                        <input class="time-loaded" name="time-loaded" type="hidden">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button type="submit" class="join-submit-btn">
-                            Submit information
-                        </button>
+                        <textarea class="desc" name="desc" id="desc"></textarea>
                     </td>
                 </tr>
             </table>
+            <input class="time-loaded" name="time-loaded" type="hidden"
+            id="time-loaded">
+            <button type="submit" class="join-submit-btn">
+                Submit information
+            </button>
             <p><span class="required">*</span> <b>Required fields</b></p>
         </form>
         <aside>
