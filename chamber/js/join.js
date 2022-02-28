@@ -1,4 +1,4 @@
-// Get current date and time for the form
+// Put current date and time into the form
 const date = new Date();
 const dateTime = {
     "month": date.getMonth(), 
