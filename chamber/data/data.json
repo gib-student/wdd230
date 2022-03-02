@@ -1,0 +1,98 @@
+{
+    "business1": {
+        "name": "Benchmark ESG | Gensuite",
+        "address": "4680 Parkway Dr., Suite 400, Mason, OH 45040",
+        "phone": "(513) 774-1000",
+        "fax": "(513) 774-1000",
+        "email": "",
+        "website": "https://benchmarkdigitalesg.com/"
+    },
+    "business2": {
+        "name": "EXACT METROLOGY",
+        "address": "11575 Gold Coast, Cincinnati, OH 45249",
+        "phone": "(513) 831-6620",
+        "fax": "",
+        "email": "",
+        "website": "https://www.exactmetrology.com/"
+    },
+    "business3": {
+        "name": "First Financial Bank - Mason Montgomery",
+        "address": "7470 Mason Montgomery Road, Mason, OH 45040",
+        "phone": "(513) 204-2000",
+        "fax": "(513) 770-4377",
+        "email": "",
+        "website": "https://www.bankatfirst.com/content/bankatfirst/en/personal.html"
+    },
+    "business4": {
+        "name": "Peoples First Savings Bank",
+        "address": "225 Reading Rd., Mason, OH 45040",
+        "phone": "513-398-1040",
+        "fax": "513-398-1045",
+        "email": "",
+        "website": "www.peoplesfirstohio.com"
+    },
+    "business5": {
+        "name": "US Bank Mason/Landen",
+        "address": "9334 Union Centre Blvd West Chester OH 45069",
+        "phone": "(513) 460-6428",
+        "fax": "",
+        "email": "",
+        "website": "https://www.usbank.com/index.html"
+    },
+    "business6": {
+        "name": "Graydon",
+        "address": "7570 Bales Street Suite 220 Liberty Township OH 45069",
+        "phone": "(513) 755-9500",
+        "fax": "513-755-9588",
+        "email": "",
+        "website": "https://graydon.law/"
+    },
+    "business7": {
+        "name": "UC Health West Chester Hospital",
+        "address": "7700 University Drive West Chester OH 45069",
+        "phone": "(513) 298-3000",
+        "fax": "(513) 298-7738",
+        "email": "",
+        "website": "https://www.uchealth.com/westchesterhospital/"
+    },
+    "business8": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "fax": "",
+        "email": "",
+        "website": ""
+    },
+    "business9": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "fax": "",
+        "email": "",
+        "website": ""
+    },
+    "business10": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "fax": "",
+        "email": "",
+        "website": ""
+    },
+    "business11": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "fax": "",
+        "email": "",
+        "website": ""
+    },
+    "business12": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "fax": "",
+        "email": "",
+        "website": ""
+    }
+}
