@@ -1,19 +1,21 @@
 {
     "business1": {
-        "name": "Benchmark ESG | Gensuite",
-        "address": "4680 Parkway Dr., Suite 400, Mason, OH 45040",
-        "phone": "(513) 774-1000",
-        "fax": "(513) 774-1000",
-        "email": "",
-        "website": "https://benchmarkdigitalesg.com/"
-    },
-    "business2": {
-        "name": "EXACT METROLOGY",
-        "address": "11575 Gold Coast, Cincinnati, OH 45249",
-        "phone": "(513) 831-6620",
+        "name": "AlphaGraphics",
+        "address": "6678 Tri Way Dr. Mason OH 45040",
+        "phone": "(513) 229-3600",
         "fax": "",
         "email": "",
-        "website": "https://www.exactmetrology.com/"
+        "website": "https://www.alphagraphics.com/us-ohio-mason-us123/",
+        "image": "alphagraphics.png"
+    },
+    "business2": {
+        "name": "US Bank Mason/Landen",
+        "address": "9334 Union Centre Blvd West Chester OH 45069",
+        "phone": "(513) 460-6428",
+        "fax": "",
+        "email": "",
+        "website": "https://www.usbank.com/index.html",
+        "image": "us-bank.png"
     },
     "business3": {
         "name": "First Financial Bank - Mason Montgomery",
@@ -21,23 +23,26 @@
         "phone": "(513) 204-2000",
         "fax": "(513) 770-4377",
         "email": "",
-        "website": "https://www.bankatfirst.com/content/bankatfirst/en/personal.html"
+        "website": "https://www.bankatfirst.com/content/bankatfirst/en/personal.html",
+        "image": "first-financial.png"
     },
     "business4": {
-        "name": "Peoples First Savings Bank",
-        "address": "225 Reading Rd., Mason, OH 45040",
-        "phone": "513-398-1040",
-        "fax": "513-398-1045",
+        "name": "UC Health West Chester Hospital",
+        "address": "7700 University Drive West Chester OH 45069",
+        "phone": "(513) 298-3000",
+        "fax": "(513) 298-7738",
         "email": "",
-        "website": "www.peoplesfirstohio.com"
+        "website": "https://www.uchealth.com/westchesterhospital/",
+        "image": "UC-health.jpg"
     },
     "business5": {
-        "name": "US Bank Mason/Landen",
-        "address": "9334 Union Centre Blvd West Chester OH 45069",
-        "phone": "(513) 460-6428",
+        "name": "EXACT METROLOGY",
+        "address": "11575 Gold Coast, Cincinnati, OH 45249",
+        "phone": "(513) 831-6620",
         "fax": "",
         "email": "",
-        "website": "https://www.usbank.com/index.html"
+        "website": "https://www.exactmetrology.com/",
+        "image": "exact.png"
     },
     "business6": {
         "name": "Graydon",
@@ -45,54 +50,61 @@
         "phone": "(513) 755-9500",
         "fax": "513-755-9588",
         "email": "",
-        "website": "https://graydon.law/"
+        "website": "https://graydon.law/",
+        "image": "Graydon.png"
     },
     "business7": {
-        "name": "UC Health West Chester Hospital",
-        "address": "7700 University Drive West Chester OH 45069",
-        "phone": "(513) 298-3000",
-        "fax": "(513) 298-7738",
+        "name": "Peoples First Savings Bank",
+        "address": "225 Reading Rd., Mason, OH 45040",
+        "phone": "513-398-1040",
+        "fax": "513-398-1045",
         "email": "",
-        "website": "https://www.uchealth.com/westchesterhospital/"
+        "website": "www.peoplesfirstohio.com",
+        "image": "peoples-first.png"
     },
     "business8": {
-        "name": "",
-        "address": "",
-        "phone": "",
+        "name": "Mason + Deerfield Lifestyle Magazine",
+        "address": "9378 MASON MONTGOMERY RD #210 Mason OH 45040",
+        "phone": "(513) 486-4781",
         "fax": "",
         "email": "",
-        "website": ""
+        "website": "https://citylifestyle.com/masonanddeerfield",
+        "image": "Lifestyle-magazine.png"
     },
     "business9": {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "fax": "",
+        "name": "Benchmark ESG | Gensuite",
+        "address": "4680 Parkway Dr., Suite 400, Mason, OH 45040",
+        "phone": "(513) 774-1000",
+        "fax": "(513) 774-1000",
         "email": "",
-        "website": ""
+        "website": "https://benchmarkdigitalesg.com/",
+        "image": "benchmark.png"
     },
     "business10": {
-        "name": "",
-        "address": "",
-        "phone": "",
+        "name": "Koob & Associates",
+        "address": "4389 Mason-Montgomery Rd. Mason OH 45040",
+        "phone": "(304) 546-5509",
         "fax": "",
         "email": "",
-        "website": ""
+        "website": "",
+        "image": ""
     },
     "business11": {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "fax": "",
+        "name": "Culver's of Mason",
+        "address": "5742 Tylersville Mason OH 45040",
+        "phone": "(513) 770-4000",
+        "fax": "(513) 770-4041",
         "email": "",
-        "website": ""
+        "website": "https://www.culvers.com/",
+        "image": "culvers.png"
     },
     "business12": {
-        "name": "",
-        "address": "",
-        "phone": "",
+        "name": "Great Wolf Lodge",
+        "address": "2501 Great Wolf Dr Mason OH 45040",
+        "phone": "(513) 459-8885",
         "fax": "",
         "email": "",
-        "website": ""
+        "website": "https://www.greatwolf.com/mason",
+        "image": "great-wolf-lodge.png"
     }
 }
