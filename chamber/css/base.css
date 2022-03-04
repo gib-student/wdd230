@@ -236,3 +236,14 @@ hr {
 .thank-head {
     font-size: 2.5em;
 }
+/* Directory page */
+.directory-main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.card {
+    max-width: 100%;
+}
+.bus-logo {
+    max-width: 100%;
+}

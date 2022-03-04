@@ -3,6 +3,7 @@ const file = "../data/data.json";
 var rawFile = new XMLHttpRequest();
 rawFile.overrideMimeType('application/json');
 rawFile.open("GET", file, true);
+
 rawFile.onreadystatechange = function() {
     if (rawFile.readyState === 4 && rawFile.status == "200") {
         const text = rawFile.responseText;
@@ -21,12 +22,12 @@ function makeCards(busData){
         cardNum += 1;
         const business = busData[key];
         // Make the div container
-        const container = document.createElement('div');
-        container.className = "card";
+        const card = document.createElement('div');
+        card.className = "card";
         // Make the img
         const img = document.createElement('img');
         const imgFilepath   = business["image"];
-        img.className = "bus" + toString(cardNum) + "-logo";
+        img.className = "bus-logo bus" + toString(cardNum) + "-logo";
         img.src = "../images/directory/" + imgFilepath;
         img.alt = business["name"] + " logo";
         // Make business info container
@@ -34,19 +35,26 @@ function makeCards(busData){
         infoBox.className = 'info-box';
         // Make business info elements
         const address   = document.createElement('p');
-        const phone     = document.createElement('p');
-        const URL       = document.createElement('p');
         address.classname   = "bus" + toString(cardNum) + "-address";
+        address.innerHTML = business["address"];
+        const phone     = document.createElement('p');
         phone.classname     = "bus" + toString(cardNum) + "-phone";
+        phone.innerHTML = business["phone"];
+        const URL       = document.createElement('p');
         URL.classname       = "bus" + toString(cardNum) + "-URL";
+        URL.innerHTML = business["website"];
 
         // Append children to their parents
-        container.appendChild(img);
-        container.appendChild(infoBox);
+        card.appendChild(img);
+        card.appendChild(infoBox);
 
         infoBox.appendChild(address);
         infoBox.appendChild(phone);
         infoBox.appendChild(URL);
+
+        // Append container to container of cards
+        const cardsBox = document.querySelector('.business-cards-box');
+        cardsBox.appendChild(card);
     }
 }
 
