@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="directory-page">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,36 +7,45 @@
     <title>Directory</title>
     <meta name="description" content="Directory of all of the businesses who 
         have joined the Mason Chamber of Commerce.">
-    <link rel='stylesheet' href='css/base.css'> <!--For mobile-->
-    <link rel='stylesheet' href='css/medium.css'> <!--Medium views like tablet-->
-    <link rel='stylesheet' href='css/large.css'> <!--Large views like desktop-->
+    <link rel='stylesheet' href='css/base.css'>
+    <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'>
+    
 </head>
 <body class="directory-body">
     <main class="directory-main">
         <h1 class="directory-h1">Business Directory</h1>
         <form class="view-form">
-            <button type="submit" value="card" class="card-btn">
-                <img class="card-option-icon" src="" alt=""></button>
-            <button type="submit" value="list" class="list-btn">
-                <img class="list-option-icon" src="" alt=""></button>
+            <button type="submit" class="card-btn">
+                <img class="card-icon" src="images/grid.png" alt="Card list icon"></button>
+            <button type="submit" class="list-btn">
+                <img class="list-icon" src="images/list.png" alt="Unordered list icon"></button>
         </form>
         <div class="business-cards-box">
-            <!-- Container template -->
+            <!-- Card template -->
             <!-- 
             <div class="card">
-                <img class="bus-logo bus<num>-logo" src="" alt="">
+                <p class="bus-name bus-info-item"><b></b></p>
+                <img class="bus-logo" src="" alt="">
                 <div class="info-box">
-                    <p class="bus<num>-address"></p>
-                    <p class="bus<num>-phone"></p>
-                    <p class="bus<num>-URL"></p>
+                    <p></p>
+                    <p></p>
+                    <p><a class="bus-link"></a></p>
                 </div>
             </div> -->
             
         </div>
         <div class="business-list-box">
-            <ul class="bus-list">
-
-            </ul>
+            <div class="bus-list">
+                <!-- List item template -->
+                <!--
+                <div class="bus-li">
+                    <p><b></b></p>
+                    <p></p>
+                    <p></p>
+                    <p><a class="bus-link"></a></p>
+                </div> -->
+            </div>
         </div>
     </main>
     <script src="js/directory.js"></script>

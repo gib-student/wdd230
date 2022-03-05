@@ -10,47 +10,70 @@ rawFile.onreadystatechange = function() {
         const parsedText = JSON.parse(text);
         makeCards(parsedText);
         makeList(parsedText);
+
+        // Change to cards or list based on buttons
+        const cardBtn = document.querySelector('.card-btn');
+        const listBtn = document.querySelector('.list-btn');
+        cardBtn.addEventListener("click", () => {
+            cardBox.style.display = "block";
+            listBox.style.display = "none";
+        });
+        listBtn.addEventListener("click", () => {
+            cardBox.style.display = "none";
+            listBox.style.display = "block";
+        });
     }
 }
 rawFile.send(null);
 
-function makeCards(busData){
+function makeCards(busData) {
     // Make all the cards in HTML
     let cardNum = 0;
-    // console.log("made it here");
     for (let key in busData) {
         cardNum += 1;
         const business = busData[key];
+        
         // Make the div container
         const card = document.createElement('div');
         card.className = "card";
+        
         // Make the img
         const img = document.createElement('img');
         const imgFilepath   = business["image"];
-        img.className = "bus-logo bus" + toString(cardNum) + "-logo";
-        img.src = "../images/directory/" + imgFilepath;
+        img.className = "bus-logo";
+        if (imgFilepath != undefined) {
+            img.src = "../images/directory/" + imgFilepath;
+        }
         img.alt = business["name"] + " logo";
+
         // Make business info container
         const infoBox = document.createElement('div');
         infoBox.className = 'info-box';
+
         // Make business info elements
+        const name      = document.createElement('p');
+        const nameB     = document.createElement('b');
         const address   = document.createElement('p');
-        address.classname   = "bus" + toString(cardNum) + "-address";
-        address.innerHTML = business["address"];
         const phone     = document.createElement('p');
-        phone.classname     = "bus" + toString(cardNum) + "-phone";
-        phone.innerHTML = business["phone"];
         const URL       = document.createElement('p');
-        URL.classname       = "bus" + toString(cardNum) + "-URL";
-        URL.innerHTML = business["website"];
+        const URLLink   = document.createElement('a');
+        URLLink.classList   .add("bus-link");
+        nameB.innerHTML     = business['name'];
+        address.innerHTML   = business["address"];
+        phone.innerHTML     = business["phone"];
+        URLLink.href        = business["website"];
+        URLLink.innerHTML   = "Website";
 
         // Append children to their parents
         card.appendChild(img);
         card.appendChild(infoBox);
 
-        infoBox.appendChild(address);
-        infoBox.appendChild(phone);
-        infoBox.appendChild(URL);
+        name    .appendChild(nameB);
+        infoBox .appendChild(name);
+        infoBox .appendChild(address);
+        infoBox .appendChild(phone);
+        URL     .appendChild(URLLink);
+        infoBox .appendChild(URL);
 
         // Append container to container of cards
         const cardsBox = document.querySelector('.business-cards-box');
@@ -59,6 +82,40 @@ function makeCards(busData){
 }
 
 function makeList(busData) {
-    // Make all of the list items
+    // Make all the list items in HTML
+    let cardNum = 0;
+    for (let key in busData) {
+        cardNum += 1;
+        const business = busData[key];
+        
+        // Make the list item
+        const div = document.createElement('div');
+        div.className = "bus-li";
+        
+        // Make business info elements
+        const name      = document.createElement('p');
+        const nameB     = document.createElement('b');
+        const address   = document.createElement('p');
+        const phone     = document.createElement('p');
+        const URL       = document.createElement('p');
+        const URLLink   = document.createElement('a');
+        URLLink.classList   .add("bus-link");
+        nameB.innerHTML     = business['name'];
+        address.innerHTML   = business["address"];
+        phone.innerHTML     = business["phone"];
+        URLLink.href        = business["website"];
+        URLLink.innerHTML   = "Website";
 
+        // Append children to their parents
+        name.appendChild(nameB);
+        
+        div.appendChild(name);
+        div.appendChild(address);
+        div.appendChild(phone);
+        div.appendChild(URL);
+
+        // Append list item to list
+        const ul = document.querySelector('.bus-list');
+        ul.appendChild(div);
+    }
 }
