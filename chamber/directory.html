@@ -16,9 +16,9 @@
     <main class="directory-main">
         <h1 class="directory-h1">Business Directory</h1>
         <form class="view-form">
-            <button type="submit" class="card-btn">
+            <button onclick="hideCards()" class="card-btn">
                 <img class="card-icon" src="images/grid.png" alt="Card list icon"></button>
-            <button type="submit" class="list-btn">
+            <button onclick="hideList()" class="list-btn">
                 <img class="list-icon" src="images/list.png" alt="Unordered list icon"></button>
         </form>
         <div class="business-cards-box">
@@ -48,6 +48,7 @@
             </div>
         </div>
     </main>
-    <script src="js/directory.js"></script>
+    <script class="make-script" src="js/directory/make-directory.js"></script>
+    <script src="js/directory/other.js"></script>
 </body>
 </html>

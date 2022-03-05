@@ -11,17 +11,8 @@ rawFile.onreadystatechange = function() {
         makeCards(parsedText);
         makeList(parsedText);
 
-        // Change to cards or list based on buttons
-        const cardBtn = document.querySelector('.card-btn');
-        const listBtn = document.querySelector('.list-btn');
-        cardBtn.addEventListener("click", () => {
-            cardBox.style.display = "block";
-            listBox.style.display = "none";
-        });
-        listBtn.addEventListener("click", () => {
-            cardBox.style.display = "none";
-            listBox.style.display = "block";
-        });
+        const script = document.querySelector('.make-script');
+        script.src = '';
     }
 }
 rawFile.send(null);
