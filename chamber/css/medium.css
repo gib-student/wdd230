@@ -89,4 +89,8 @@
         padding: 20px;
         width: 70%;
     }
+    /* Directory */
+    .bus-link {
+        font-size: 1.1em;
+    }    
 }
