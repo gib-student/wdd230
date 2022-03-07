@@ -7,21 +7,25 @@
     <title>Directory</title>
     <meta name="description" content="Directory of all of the businesses who 
         have joined the Mason Chamber of Commerce.">
-    <link rel='stylesheet' href='css/base.css'>
+    <!-- <link rel='stylesheet' href='css/base.css'>
     <link rel='stylesheet' href='css/medium.css'>
-    <link rel='stylesheet' href='css/large.css'>
+    <link rel='stylesheet' href='css/large.css'> -->
+    <link rel="stylesheet" href="css/directory.css">
     
 </head>
 <body class="directory-body">
     <main class="directory-main">
         <h1 class="directory-h1">Business Directory</h1>
         <form class="view-form">
-            <button onclick="hideCards()" class="card-btn">
-                <img class="card-icon" src="images/grid.png" alt="Card list icon"></button>
-            <button onclick="hideList()" class="list-btn">
-                <img class="list-icon" src="images/list.png" alt="Unordered list icon"></button>
+            <button class="card-btn">
+                <img class="card-icon" src="images/grid.png" alt="Card list icon">
+            </button>
+            <button class="list-btn">
+                <img class="list-icon" src="images/list.png" alt="Unordered list icon">
+            </button>
         </form>
-        <div class="business-cards-box">
+        <div class="bus-cards-box">
+            Cards box
             <!-- Card template -->
             <!-- 
             <div class="card">
@@ -35,7 +39,8 @@
             </div> -->
             
         </div>
-        <div class="business-list-box">
+        <div class="bus-list-box">
+            List box
             <div class="bus-list">
                 <!-- List item template -->
                 <!--
@@ -48,7 +53,41 @@
             </div>
         </div>
     </main>
-    <script class="make-script" src="js/directory/make-directory.js"></script>
-    <script src="js/directory/other.js"></script>
+    <script>
+    // Display view style depending on the viewport
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    const cardsBox  = document.querySelector('.bus-cards-box');
+    const listBox   = document.querySelector('.bus-list-box');
+
+    // if (vw >= 800 && vw < 1000) {87
+    //     console.log("If statement is true");
+    //     cardsBox.style.display  = 'none';
+    //     listBox.style.display   = 'block';
+    // }
+
+    // Change view style according to button presses
+    const cardsBtn  = document.querySelector('.card-btn');
+    const listBtn   = document.querySelector('.list-btn');
+
+    cardsBtn.onclick = function() {
+        if (cardsBox.style.display === 'none' && 
+            listBox.style.display === 'block') {
+            
+            cardsBox.style.display  = 'block';
+            listBox.style.display   = 'none';
+        }
+    };
+
+    listBtn.onclick = function() {
+        if (cardsBox.style.display === 'block' &&
+            listBox.style.display === 'none') {
+        
+            cardsBox.style.display  = 'none';
+            listBox.style.display   = 'block';
+        }
+    };
+
+    </script>
+    <script src="js/directory/directory.js"></script>
 </body>
 </html>

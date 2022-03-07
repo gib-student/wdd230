@@ -1,0 +1,53 @@
+/* Directory */
+/* .directory-main {
+    display: grid;
+    grid-template-columns: 1fr;
+} */
+.directory-h1 {
+    text-align: center;
+}
+.bus-cards-box {
+    display: block;
+    padding: 2px 16px;
+    background-color: orange;
+    height: 100px;
+}
+.bus-list-box {
+    display: none;
+    padding: 2px 16px;
+    background-color: red;
+    height: 100px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px 5px 0 0;
+    margin: 2em 0 2em;
+    /* border: solid black; */
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.info-box {
+    padding: 15px;
+}
+.bus-logo {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.bus-link {
+    text-decoration: none;
+}
+.bus-link:hover {
+    color: red;
+}
+.view-form {
+    text-align: center;
+}
+.card-icon, .list-icon {
+    justify-content: center;
+    width: 35px;
+}
+.bus-list > div:nth-child(odd){
+    background: #efefef;
+}
