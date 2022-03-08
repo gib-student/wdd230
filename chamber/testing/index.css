@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid black;
+}
+div {
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: solid black;    
+}

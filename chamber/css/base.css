@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather&family=Raleway:wght@300&family=Roboto+Mono&display=swap');
 
-#home-body, li, h3, p, a {
+#home-body, li, h3, p, a, label, .join-submit-btn {
     font-family: 'Raleway', sans-serif;
 }
 h1, h2, h4, h5, h6 {
@@ -15,7 +15,6 @@ h1, h2, h4, h5, h6 {
     font-size: 1em;
     font-family: 'Raleway', sans-serif;
 }
-
 #top {
     background-color: #abc8c0;
 }
@@ -210,21 +209,30 @@ h1, h2, h4, h5, h6 {
     box-shadow: 5px 5px 5px 3px grey;
     transition: .5s;
 }
+/* Discover */
+.discover-header {
+    text-align: center;
+}
 .disc-hr {
     border: .1px solid;
     border-radius: 5px;
 }
-
+/* Join */
 .join-body {
     background-color: #abc8c0;
-
+}
+.join-header {
+    min-height: 100px;
 }
 .join-h1 {
     text-align: center;
     margin: 0;
     padding: 0;
 }
-
+.required {
+    color: red;
+    font-size: 1.3em;
+}
 .thank-body {
     text-align: center;
 }
@@ -232,7 +240,7 @@ h1, h2, h4, h5, h6 {
     font-size: 2.5em;
 }
 /* Directory */
-.directory-main {
+.contacts-box {
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -240,7 +248,6 @@ h1, h2, h4, h5, h6 {
     text-align: center;
 }
 .bus-cards-box {
-    display: block;
     padding: 2px 16px;
     height: 100px;
 }
@@ -256,6 +263,7 @@ h1, h2, h4, h5, h6 {
     transition: 0.3s;
     border-radius: 5px 5px 0 0;
     margin: 2em 0 2em;
+    text-align: center;
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);

@@ -1,6 +1,6 @@
 /* Media query for large views */
 @media only screen and (min-width: 1000px) {
-    body {
+    #home-body {
         margin-left: 10%;
         margin-right: 10%;
         color: white;
@@ -12,19 +12,20 @@
     p, li, a, button, img {
         font-size: 1em;
     }
-    h2 {
+    .main-subheader {
         color: black;
         font-size: 1.5em;
     }
-    h3 {
+    .welcome, .events-title, .weather-title, .temp .weather-description,
+    .spotlight-title-1, .spotlight-title-2, .spotlight-title-3, .new-title {
         font-size: 1.3em;
     }
-    h4 {
+    .hmemb {
         font-size: 1.8em;
         color: black;
     }
     /* Header */
-    header {
+    .home-header {
         min-height: 200px;
     }
     .logo {
@@ -124,6 +125,10 @@
         display: none;
     }
     /* Discover page */
+    .discover-header {
+        min-height: 150px;
+        text-align: center;
+    }
     #discover-main {
         /* border: solid black; */
         display: grid;
@@ -184,6 +189,9 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
+    .join-header {
+        min-height: 170px;
+    }
     .hmemb {
         padding: 0;
         margin: 0;
@@ -192,8 +200,9 @@
     label {
         color: black;
     }
-    .required {
-        color: red;
-        font-size: 1.7em;
+    /* Directory */
+    .contacts-box {
+        grid-template-columns: 1fr 1fr 1fr;
     }
+    
 }

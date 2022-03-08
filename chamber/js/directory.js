@@ -19,8 +19,11 @@ rawFile.onreadystatechange = function() {
 rawFile.send(null);
 
 function makeCards(busData) {
+    
     // Make all the cards in HTML
     let cardNum = 0;
+    let row = 1;
+    let col = 0;
     for (let key in busData) {
         cardNum += 1;
         const business = busData[key];
@@ -28,6 +31,19 @@ function makeCards(busData) {
         // Make the div container
         const card = document.createElement('div');
         card.className = "card";
+        // // Determine and set its row and column in the grid
+        // col += 1;
+        // if (col % 4 == 0) {
+        //     row += 1;
+        //     col = 1;
+        // }
+        // card.style.gridArea = row.toString() + '/' + col.toString() + '/span 1/' + 'span 1';
+
+        // // Debug for gridding
+        // const gridArea = card.style.gridArea;
+        // console.log("cardNum: " + cardNum.toString());
+        // console.log("card grid area: " + gridArea.toString());
+        // console.log("row: " + row.toString() + " col: " + col.toString());
         
         // Make the img
         const img = document.createElement('img');
@@ -57,17 +73,17 @@ function makeCards(busData) {
         URLLink.innerHTML   = "Website";
 
         // Append children to their parents
-        card.appendChild(img);
-        card.appendChild(infoBox);
-
         name    .appendChild(nameB);
+        URL     .appendChild(URLLink);
+        
         infoBox .appendChild(name);
         infoBox .appendChild(address);
         infoBox .appendChild(phone);
-        URL     .appendChild(URLLink);
         infoBox .appendChild(URL);
+        
+        card    .appendChild(img);
+        card    .appendChild(infoBox);
 
-        // Append container to container of cards
         cardsBox.appendChild(card);
     }
 }
@@ -113,8 +129,10 @@ function makeList(busData) {
 }
 // Display view style depending on the viewport
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+const mediumView    = (vw >= 800 && vw < 1000);
+const largeView     = (vw >= 1000);
 
-if (vw >= 800 && vw < 1000) {
+if (mediumView) {
     console.log("If statement is true");
     cardsBox.style.display  = 'none';
     listBox.style.display   = 'block';
@@ -127,9 +145,15 @@ const listBtn   = document.querySelector('.list-btn');
 cardsBtn.onclick = function() {
     cardsBox.style.display  = 'block';
     listBox.style.display   = 'none';
+    if (largeView) {
+        document.querySelector('.contacts-box').style.gridTemplateColumns = "1fr 1fr 1fr";
+    }
 };
 
 listBtn.onclick = function() {
     cardsBox.style.display  = 'none';
     listBox.style.display   = 'block';
+    if (largeView) {
+        document.querySelector('.contacts-box').style.gridTemplateColumns = "1fr";
+    }
 };

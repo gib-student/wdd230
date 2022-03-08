@@ -4,10 +4,11 @@
         margin-left: 15%;
         margin-right: 15%;
     }
-    h3 {
+    .welcome, .events-title, .weather-title, .temp .weather-description,
+        .spotlight-title-1, .spotlight-title-2, .spotlight-title-3, .new-title {
         font-size: 1.7em;
     }
-    h4 {
+    .hmemb, .join-label, .required-desc, .join-submit-btn {
         font-size: 1.3em;
     }
     p, li, a, button, img {
@@ -89,8 +90,9 @@
         padding: 20px;
         width: 70%;
     }
+    /* Join */
     /* Directory */
     .bus-link {
         font-size: 1.1em;
-    }    
+    }
 }
