@@ -22,68 +22,48 @@ function makeCards(busData) {
     
     // Make all the cards in HTML
     let cardNum = 0;
-    let row = 1;
-    let col = 0;
     for (let key in busData) {
         cardNum += 1;
         const business = busData[key];
         
-        // Make the div container
-        const card = document.createElement('div');
-        card.className = "card";
-        // // Determine and set its row and column in the grid
-        // col += 1;
-        // if (col % 4 == 0) {
-        //     row += 1;
-        //     col = 1;
-        // }
-        // card.style.gridArea = row.toString() + '/' + col.toString() + '/span 1/' + 'span 1';
-
-        // // Debug for gridding
-        // const gridArea = card.style.gridArea;
-        // console.log("cardNum: " + cardNum.toString());
-        // console.log("card grid area: " + gridArea.toString());
-        // console.log("row: " + row.toString() + " col: " + col.toString());
-        
-        // Make the img
-        const img = document.createElement('img');
-        const imgFilepath   = business["image"];
-        img.className = "bus-logo";
-        if (imgFilepath != undefined) {
-            img.src = "../images/directory/" + imgFilepath;
-        }
-        img.alt = business["name"] + " logo";
-
-        // Make business info container
-        const infoBox = document.createElement('div');
-        infoBox.className = 'info-box';
-
-        // Make business info elements
+        // Make all the elements
+        const card      = document.createElement('div');
+        const img       = document.createElement('img');
+        const infoBox   = document.createElement('div');
         const name      = document.createElement('p');
         const nameB     = document.createElement('b');
         const address   = document.createElement('p');
         const phone     = document.createElement('p');
         const URL       = document.createElement('p');
         const URLLink   = document.createElement('a');
-        URLLink.classList   .add("bus-link");
+
+        // Add classes
+        card.classList  .add("card");
+        img.classList   .add("bus-logo");
+        infoBox.classList.add('info-box');
+        URLLink.classList.add("bus-link");
+
+        // Add content
+        const imgFile   = business["image"];
+        if (imgFile != undefined) {
+            img.src = "../images/directory/" + imgFile;
+        }
+        img.alt             = business["name"] + " logo";
         nameB.innerHTML     = business['name'];
         address.innerHTML   = business["address"];
         phone.innerHTML     = business["phone"];
         URLLink.href        = business["website"];
         URLLink.innerHTML   = "Website";
 
-        // Append children to their parents
+        // Append children to parents
         name    .appendChild(nameB);
         URL     .appendChild(URLLink);
-        
         infoBox .appendChild(name);
         infoBox .appendChild(address);
         infoBox .appendChild(phone);
         infoBox .appendChild(URL);
-        
         card    .appendChild(img);
         card    .appendChild(infoBox);
-
         cardsBox.appendChild(card);
     }
 }
@@ -127,6 +107,7 @@ function makeList(busData) {
         ul.appendChild(div);
     }
 }
+
 // Display view style depending on the viewport
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 const mediumView    = (vw >= 800 && vw < 1000);
@@ -143,17 +124,11 @@ const cardsBtn  = document.querySelector('.card-btn');
 const listBtn   = document.querySelector('.list-btn');
 
 cardsBtn.onclick = function() {
-    cardsBox.style.display  = 'block';
+    cardsBox.style.display  = 'grid';
     listBox.style.display   = 'none';
-    if (largeView) {
-        document.querySelector('.contacts-box').style.gridTemplateColumns = "1fr 1fr 1fr";
-    }
 };
 
 listBtn.onclick = function() {
     cardsBox.style.display  = 'none';
     listBox.style.display   = 'block';
-    if (largeView) {
-        document.querySelector('.contacts-box').style.gridTemplateColumns = "1fr";
-    }
 };

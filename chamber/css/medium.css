@@ -90,9 +90,12 @@
         padding: 20px;
         width: 70%;
     }
-    /* Join */
     /* Directory */
     .bus-link {
         font-size: 1.1em;
+    }
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }

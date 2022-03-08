@@ -288,3 +288,53 @@ h1, h2, h4, h5, h6 {
 .bus-list > div:nth-child(odd){
     background: #efefef;
 }
+/* Directory */
+.bus-cards-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* border: solid black; */
+}
+.directory-h1 {
+    text-align: center;
+}
+.bus-cards-box {
+    padding: 2px 16px;
+    /* border: solid black; */
+}
+.bus-list-box {
+    display: none;
+}
+.bus-li {
+    margin: 20px 0 20px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px 5px 0 0;
+    margin: 1em 1em 1em;
+    text-align: center;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.info-box {
+    padding: 15px;
+}
+.bus-logo {
+    max-width: 100%;
+    /* border: solid black; */
+    border-radius: 5px 5px 0 0;
+}
+.bus-link:hover {
+    color: red;
+}
+.view-form {
+    text-align: center;
+}
+.card-icon, .list-icon {
+    justify-content: center;
+    width: 35px;
+}
+.bus-list > div:nth-child(odd){
+    background: #efefef;
+}
