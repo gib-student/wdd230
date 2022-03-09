@@ -1,9 +1,5 @@
 /* Media query for medium+ views */
 @media only screen and (min-width: 800px) {
-    body {
-        margin-left: 15%;
-        margin-right: 15%;
-    }
     .welcome, .events-title, .weather-title, .temp .weather-description,
         .spotlight-title-1, .spotlight-title-2, .spotlight-title-3, .new-title {
         font-size: 1.7em;
@@ -94,8 +90,7 @@
     .bus-link {
         font-size: 1.1em;
     }
-    body {
-        margin-left: 15%;
-        margin-right: 15%;
+    .bus-cards-box {
+        grid-template-columns: 1fr 1fr; 
     }
 }

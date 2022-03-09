@@ -201,9 +201,6 @@
         color: black;
     }
     /* Directory */
-    .contacts-box {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
     .bus-cards-box {
         grid-template-columns: 1fr 1fr 1fr; 
     }
