@@ -280,6 +280,7 @@ h1, h2, h4, h5, h6 {
 }
 .view-form {
     text-align: center;
+    margin: 1.5em 0 1.5em;
 }
 .card-icon, .list-icon {
     justify-content: center;
@@ -293,9 +294,6 @@ h1, h2, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr;
     /* border: solid black; */
-}
-.directory-h1 {
-    text-align: center;
 }
 .bus-cards-box {
     padding: 2px 16px;

@@ -4,7 +4,7 @@ const listBox   = document.querySelector('.bus-list-box');
 
 // Get the business information data
 const file = "../data/data.json";
-var rawFile = new XMLHttpRequest();
+const rawFile = new XMLHttpRequest();
 rawFile.overrideMimeType('application/json');
 rawFile.open("GET", file, true);
 
@@ -19,13 +19,13 @@ rawFile.onreadystatechange = function() {
 rawFile.send(null);
 
 function makeCards(busData) {
-    
+
     // Make all the cards in HTML
     let cardNum = 0;
     for (let key in busData) {
         cardNum += 1;
         const business = busData[key];
-        
+
         // Make all the elements
         const card      = document.createElement('div');
         const img       = document.createElement('img');
@@ -74,11 +74,11 @@ function makeList(busData) {
     for (let key in busData) {
         cardNum += 1;
         const business = busData[key];
-        
+
         // Make the list item
         const div = document.createElement('div');
         div.className = "bus-li";
-        
+
         // Make business info elements
         const name      = document.createElement('p');
         const nameB     = document.createElement('b');
@@ -96,7 +96,7 @@ function makeList(busData) {
         // Append children to their parents
         name.appendChild(nameB);
         URL.appendChild(URLLink);
-        
+
         div.appendChild(name);
         div.appendChild(address);
         div.appendChild(phone);
@@ -111,7 +111,6 @@ function makeList(busData) {
 // Display view style depending on the viewport
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 const mediumView    = (vw >= 800 && vw < 1000);
-const largeView     = (vw >= 1000);
 
 if (mediumView) {
     console.log("If statement is true");
@@ -132,3 +131,16 @@ listBtn.onclick = function() {
     cardsBox.style.display  = 'none';
     listBox.style.display   = 'block';
 };
+
+// Current date at top
+const date          = new Date();
+const year          = date.getFullYear();
+const month         = date.getMonth();
+const monthDay      = date.getDate();
+const weekDay       = date.getDay();
+const dateElement   = document.querySelector('#date');
+
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
+'August', 'September', 'October','November','December'];
+const daysOfWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+dateElement.innerHTML = daysOfWeek[weekDay] + ', ' + monthDay + ' ' + months[month] + ' ' + year;
