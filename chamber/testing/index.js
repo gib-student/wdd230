@@ -1,10 +1,12 @@
-const div1 = document.createElement('div');
-const div2 = document.createElement('div');
-const div3 = document.createElement('div');
+const imageUrl = "https://i.picsum.photos/id/566/200/300.jpg?hmac=gDpaVMLNupk7AufUDLFHttohsJ9-C17P7L-QKsVgUQU";
 
-const container = document.querySelector('.container');
-
-container.appendChild(div1);
-container.appendChild(div2);
-container.appendChild(div3);
-
+(async () => {
+  const response = await fetch(imageUrl)
+  const imageBlob = await response.blob()
+  const reader = new FileReader();
+  reader.readAsDataURL(imageBlob);
+  reader.onloadend = () => {
+    const base64data = reader.result;
+    console.log(base64data);
+  }
+})()

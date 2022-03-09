@@ -5,11 +5,10 @@ const listBox   = document.querySelector('.bus-list-box');
 // Get the business information data
 fetch('https://raw.githubusercontent.com/gib-student/wdd230-Main/main/chamber/data/data.json')
     .then(response => response.json())
-    .then (data => function() {
+    .then (data => {
         makeCards(data);
         makeList(data);
     });
-
 
 // const file = "../data/data.json";
 // const rawFile = new XMLHttpRequest();
@@ -27,6 +26,8 @@ fetch('https://raw.githubusercontent.com/gib-student/wdd230-Main/main/chamber/da
 // rawFile.send(null);
 
 function makeCards(busData) {
+    console.log("Make cards function called");
+    console.log(busData);
 
     // Make all the cards in HTML
     let cardNum = 0;
@@ -52,9 +53,20 @@ function makeCards(busData) {
         URLLink.classList.add("bus-link");
 
         // Add content
-        const imgFile   = business["image"];
-        if (imgFile != undefined) {
-            img.src = "../images/directory/" + imgFile;
+        const imgFilepath = business["image"];
+        if (imgFilepath != undefined) {
+            const imageUrl = 'https://raw.githubusercontent.com/gib-student/wdd230-Main/main/chamber/images/directory/' + imgFilepath.toString();
+            console.log("imageUrl: " + imageUrl);
+            (async () => {
+                const response = await fetch(imageUrl)
+                const imageBlob = await response.blob()
+                const reader = new FileReader();
+                reader.readAsDataURL(imageBlob);
+                reader.onloadend = () => {
+                  const base64data = reader.result;
+                  img.src = base64data;
+                }
+              })()
         }
         img.alt             = business["name"] + " logo";
         nameB.innerHTML     = business['name'];
@@ -77,6 +89,9 @@ function makeCards(busData) {
 }
 
 function makeList(busData) {
+    console.log("Make list function called");
+    console.log(busData);
+
     // Make all the list items in HTML
     let cardNum = 0;
     for (let key in busData) {
@@ -121,7 +136,6 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 const mediumView    = (vw >= 800 && vw < 1000);
 
 if (mediumView) {
-    console.log("If statement is true");
     cardsBox.style.display  = 'none';
     listBox.style.display   = 'block';
 }
