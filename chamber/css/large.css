@@ -1,8 +1,10 @@
 /* Media query for large views */
 @media only screen and (min-width: 1000px) {
-    #home-body {
+    body {
         margin-left: 10%;
         margin-right: 10%;
+    }
+    #home-body {
         color: white;
     }
     h1 {
