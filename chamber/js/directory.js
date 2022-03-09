@@ -3,20 +3,28 @@ const cardsBox  = document.querySelector('.bus-cards-box');
 const listBox   = document.querySelector('.bus-list-box');
 
 // Get the business information data
-const file = "../data/data.json";
-const rawFile = new XMLHttpRequest();
-rawFile.overrideMimeType('application/json');
-rawFile.open("GET", file, true);
+fetch('https://raw.githubusercontent.com/gib-student/wdd230-Main/main/chamber/data/data.json')
+    .then(response => response.json())
+    .then (data => function() {
+        makeCards(data);
+        makeList(data);
+    });
 
-rawFile.onreadystatechange = function() {
-    if (rawFile.readyState === 4 && rawFile.status == "200") {
-        const text = rawFile.responseText;
-        const parsedText = JSON.parse(text);
-        makeCards(parsedText);
-        makeList(parsedText);
-    }
-}
-rawFile.send(null);
+
+// const file = "../data/data.json";
+// const rawFile = new XMLHttpRequest();
+// rawFile.overrideMimeType('application/json');
+// rawFile.open("GET", file, true);
+
+// rawFile.onreadystatechange = function() {
+//     if (rawFile.readyState === 4 && rawFile.status == "200") {
+//         const text = rawFile.responseText;
+//         const parsedText = JSON.parse(text);
+//         makeCards(parsedText);
+//         makeList(parsedText);
+//     }
+// }
+// rawFile.send(null);
 
 function makeCards(busData) {
 
