@@ -192,7 +192,6 @@ h1, h2, h4, h5, h6 {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 .town-img-section {
     justify-content: center;
     text-align: center;
@@ -208,14 +207,6 @@ h1, h2, h4, h5, h6 {
 .town-img:hover {
     box-shadow: 5px 5px 5px 3px grey;
     transition: .5s;
-}
-/* Discover */
-.discover-header {
-    text-align: center;
-}
-.disc-hr {
-    border: .1px solid;
-    border-radius: 5px;
 }
 /* Join */
 .join-body {
@@ -239,55 +230,13 @@ h1, h2, h4, h5, h6 {
 .thank-head {
     font-size: 2.5em;
 }
-/* Directory */
-.contacts-box {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.directory-h1 {
+/* Discover */
+.discover-header {
     text-align: center;
 }
-.bus-cards-box {
-    padding: 2px 16px;
-    height: 100px;
-}
-.bus-list-box {
-    display: none;
-    height: 100px;
-}
-.bus-li {
-    margin: 20px 0 20px;
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px 5px 0 0;
-    margin: 2em 0 2em;
-    text-align: center;
-}
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.info-box {
-    padding: 15px;
-}
-.bus-logo {
-    max-width: 100%;
-    border-radius: 5px 5px 0 0;
-}
-.bus-link:hover {
-    color: red;
-}
-.view-form {
-    text-align: center;
-    margin: 1.5em 0 1.5em;
-}
-.card-icon, .list-icon {
-    justify-content: center;
-    width: 35px;
-}
-.bus-list > div:nth-child(odd){
-    background: #efefef;
+.disc-hr {
+    border: .1px solid;
+    border-radius: 5px;
 }
 /* Directory */
 .bus-cards-box {
@@ -320,19 +269,20 @@ h1, h2, h4, h5, h6 {
 }
 .bus-logo {
     max-width: 100%;
-    /* border: solid black; */
     border-radius: 5px 5px 0 0;
 }
 .bus-link:hover {
     color: red;
 }
-.view-form {
+.view-buttons {
     text-align: center;
+    text-align: center;
+    margin: 1.5em 0 1.5em;
 }
 .card-icon, .list-icon {
     justify-content: center;
     width: 35px;
 }
-.bus-list > div:nth-child(odd){
+.bus-list-box > div:nth-child(odd){
     background: #efefef;
 }

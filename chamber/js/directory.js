@@ -11,9 +11,6 @@ fetch('https://raw.githubusercontent.com/gib-student/wdd230-Main/main/chamber/da
     });
 
 function makeCards(busData) {
-    console.log("Make cards function called");
-    console.log(busData);
-
     // Make all the cards in HTML
     let cardNum = 0;
     for (let key in busData) {
@@ -39,9 +36,8 @@ function makeCards(busData) {
 
         // Add content
         const imgFilepath = business.image;
-        if (imgFilepath != undefined) {
+        if (imgFilepath != '') {
             const imageUrl = 'https://raw.githubusercontent.com/gib-student/wdd230-Main/main/chamber/images/directory/' + imgFilepath.toString();
-            console.log("imageUrl: " + imageUrl);
             (async () => {
                 const response = await fetch(imageUrl);
                 const imageBlob = await response.blob();
@@ -74,9 +70,6 @@ function makeCards(busData) {
 }
 
 function makeList(busData) {
-    console.log("Make list function called");
-    console.log(busData);
-
     // Make all the list items in HTML
     let cardNum = 0;
     for (let key in busData) {
@@ -111,8 +104,7 @@ function makeList(busData) {
         div.appendChild(URL);
 
         // Append list item to list
-        const ul = document.querySelector('.bus-list');
-        ul.appendChild(div);
+        listBox.appendChild(div);
     }
 }
 
