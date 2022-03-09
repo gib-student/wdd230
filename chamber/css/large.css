@@ -14,13 +14,11 @@
     p, li, a, button, img {
         font-size: 1em;
     }
-    .main-subheader {
-        color: black;
-        font-size: 1.5em;
-    }
     .welcome, .events-title, .weather-title, .temp .weather-description,
-    .spotlight-title-1, .spotlight-title-2, .spotlight-title-3, .new-title {
+    .spotlight-title-1, .spotlight-title-2, .spotlight-title-3, .new-title
+    .main-subheader, #date {
         font-size: 1.3em;
+        color: black
     }
     .hmemb {
         font-size: 1.8em;
@@ -50,9 +48,6 @@
     }
     .link-list a:hover {
         color: white;
-    }
-    #date {
-        font-size: 1.4em;
     }
     #msg-box {
         color: black;

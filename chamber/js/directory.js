@@ -10,21 +10,6 @@ fetch('https://raw.githubusercontent.com/gib-student/wdd230-Main/main/chamber/da
         makeList(data);
     });
 
-// const file = "../data/data.json";
-// const rawFile = new XMLHttpRequest();
-// rawFile.overrideMimeType('application/json');
-// rawFile.open("GET", file, true);
-
-// rawFile.onreadystatechange = function() {
-//     if (rawFile.readyState === 4 && rawFile.status == "200") {
-//         const text = rawFile.responseText;
-//         const parsedText = JSON.parse(text);
-//         makeCards(parsedText);
-//         makeList(parsedText);
-//     }
-// }
-// rawFile.send(null);
-
 function makeCards(busData) {
     console.log("Make cards function called");
     console.log(busData);
@@ -53,26 +38,26 @@ function makeCards(busData) {
         URLLink.classList.add("bus-link");
 
         // Add content
-        const imgFilepath = business["image"];
+        const imgFilepath = business.image;
         if (imgFilepath != undefined) {
             const imageUrl = 'https://raw.githubusercontent.com/gib-student/wdd230-Main/main/chamber/images/directory/' + imgFilepath.toString();
             console.log("imageUrl: " + imageUrl);
             (async () => {
-                const response = await fetch(imageUrl)
-                const imageBlob = await response.blob()
+                const response = await fetch(imageUrl);
+                const imageBlob = await response.blob();
                 const reader = new FileReader();
                 reader.readAsDataURL(imageBlob);
                 reader.onloadend = () => {
                   const base64data = reader.result;
                   img.src = base64data;
-                }
-              })()
+                };
+              })();
         }
-        img.alt             = business["name"] + " logo";
-        nameB.innerHTML     = business['name'];
-        address.innerHTML   = business["address"];
-        phone.innerHTML     = business["phone"];
-        URLLink.href        = business["website"];
+        img.alt             = business.name + " logo";
+        nameB.innerHTML     = business.name;
+        address.innerHTML   = business.address;
+        phone.innerHTML     = business.phone;
+        URLLink.href        = business.website;
         URLLink.innerHTML   = "Website";
 
         // Append children to parents
@@ -110,10 +95,10 @@ function makeList(busData) {
         const URL       = document.createElement('p');
         const URLLink   = document.createElement('a');
         URLLink.classList   .add("bus-link");
-        nameB.innerHTML     = business['name'];
-        address.innerHTML   = business["address"];
-        phone.innerHTML     = business["phone"];
-        URLLink.href        = business["website"];
+        nameB.innerHTML     = business.name;
+        address.innerHTML   = business.address;
+        phone.innerHTML     = business.phone;
+        URLLink.href        = business.website;
         URLLink.innerHTML   = "Website";
 
         // Append children to their parents
