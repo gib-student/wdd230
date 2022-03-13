@@ -1,12 +1,4 @@
-const imageUrl = "https://i.picsum.photos/id/566/200/300.jpg?hmac=gDpaVMLNupk7AufUDLFHttohsJ9-C17P7L-QKsVgUQU";
+fetch('http://api.openweathermap.org/data/2.5/weather?lat=43&lon=-111&appid=b1cc209439f1596ec11f47f851d9a685')
+.then(response => response.json())
+.then(data => console.log(data));
 
-(async () => {
-  const response = await fetch(imageUrl)
-  const imageBlob = await response.blob()
-  const reader = new FileReader();
-  reader.readAsDataURL(imageBlob);
-  reader.onloadend = () => {
-    const base64data = reader.result;
-    console.log(base64data);
-  }
-})()
