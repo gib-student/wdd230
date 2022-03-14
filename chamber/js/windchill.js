@@ -5,7 +5,6 @@ fetch('http://api.openweathermap.org/data/2.5/weather?lat=43&lon=-111&'+
   const tempF     = Math.round(data.main.temp);
   const condition = data.weather[0].main;
   const wSpeed    = data.wind.speed;
-  const wSpeedKph = Math.round((wSpeed * 1.60934));
 
   // Calculate wind chill only if wind speed > 3mph
   if (wSpeed > 3) {
@@ -20,10 +19,28 @@ fetch('http://api.openweathermap.org/data/2.5/weather?lat=43&lon=-111&'+
     document.querySelector(".wind-chill-value").innerHTML = wChillText;
   }
   
-  var wSpeedText = String(wSpeedKph) + " km/h"
+  var wSpeedText = String(wSpeed) + " mph"
   document.querySelector(".wind-speed-value").innerHTML     = wSpeedText;
   document.querySelector('.temp').innerHTML                 = String(tempF) + " \xB0F";
   document.querySelector('.weather-description').innerHTML  = condition;
+
+  // Set weather image appropriately
+  const weatherImg  = document.querySelector('.weather-img');
+  const icon        = data.weather[0].icon.toString();
+
+  (async () => {
+    const imageUrl = 'http://openweathermap.org/img/wn/' + icon + '@4x.png';
+    const response = await fetch(imageUrl);
+    const imageBlob = await response.blob();
+    const reader = new FileReader();
+    reader.readAsDataURL(imageBlob);
+    reader.onloadend = () => {
+      const base64data = reader.result;
+      weatherImg.src = base64data;
+    };
+  })();
+
+  console.log(data);
 });
 
 // Helpful site for these calculations: 
