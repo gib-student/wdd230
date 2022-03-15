@@ -53,3 +53,12 @@ else {
 localStorage.setItem("lastDate", d.toString());
 localStorage.setItem("lastMonth", m.toString());
 localStorage.setItem("lastYear", y.toString());
+
+// Current date at top of page
+const weekDay = date.getDay();
+let dateElement = document.querySelector('#date');
+
+let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
+'August', 'September', 'October','November','December'];
+let daysOfWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+dateElement.innerHTML = daysOfWeek[weekDay] + ', ' + d + ' ' + months[m] + ' ' + y;
