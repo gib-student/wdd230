@@ -1,15 +1,15 @@
 // Progressive loading of images
-let imagesToLoad = document.querySelectorAll('img[data-src]');
-console.log("imagesToLoad: " + String(imagesToLoad))
-const loadImages = (image) => {
-    image.setAttribute('src', image.getAttribute('data-src'));
-    image.onLoad = () => {
-        image.removeAttribute('data-src');
-    };
-};
-imagesToLoad.forEach((img) => {
-    loadImages(img);
-});
+// let imagesToLoad = document.querySelectorAll('img[data-src]');
+// console.log("imagesToLoad: " + String(imagesToLoad))
+// const loadImages = (image) => {
+//     image.setAttribute('src', image.getAttribute('data-src'));
+//     image.onLoad = () => {
+//         image.removeAttribute('data-src');
+//     };
+// };
+// imagesToLoad.forEach((img) => {
+//     loadImages(img);
+// });
 
 // Use local storage to calculate days between last time accessed
 // Get date data
@@ -53,6 +53,26 @@ else {
 localStorage.setItem("lastDate", d.toString());
 localStorage.setItem("lastMonth", m.toString());
 localStorage.setItem("lastYear", y.toString());
+
+// Lazy loading
+const images = document.querySelectorAll('[data-src]'); 
+const options = { threshold: [.5] } 
+function preloadImage(img) { 
+    const source = img.getAttribute('data-src'); 
+    img.src = source; 
+} 
+const io = new IntersectionObserver( (entries, io) => {
+     entries.forEach(entry => {
+        if(!entry.isIntersecting){ 
+            return; 
+        } 
+        else { 
+            preloadImage(entry.target); //call a function send in the image that is currently intersecting 
+            io.unobserve(entry.target); 
+        } 
+    }); 
+}, options); 
+images.forEach(images => { io.observe(images); });
 
 // Current date at top of page
 const weekDay = date.getDay();
