@@ -5,6 +5,7 @@ const lastModified = document.lastModified;
 const month = date.getMonth();
 const monthDay = date.getDate();
 const weekDay = date.getDay();
+console.log("weekDay: " + weekDay.toString());
 
 // Hamburger menu
 const hambutton = document.querySelector('.hamburger');
@@ -21,7 +22,7 @@ window.onresize = () => {
     }
 };
 // Chamber meet and greet message
-if (weekDay != 2 || weekDay != 3) {
+if (weekDay != 2 && weekDay != 3) {
     document.getElementById('msg').style.display = 'none';
 }
 // Footer year and last modified update
