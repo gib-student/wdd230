@@ -1,0 +1,24 @@
+{
+    "directors": [
+        {
+            "name": "Aubrie Karl",
+            "email": "aubriekarl@mason.net",
+            "image": "jennifer.jpg"
+        },
+        {
+            "name": "Georgei Swati",
+            "email": "georgeiswati@mason.net",
+            "image": "joe-biden.jpg"
+        },
+        {
+            "name": "Emelie Zebedaios",
+            "email": "aubriekarl@mason.net",
+            "image": "hermione.png"
+        },
+        {
+            "name": "Horace Kimberleigh",
+            "email": "horacekimberleigh@mason.net",
+            "image": "Mace_Windu.png"
+        }
+    ]
+}
