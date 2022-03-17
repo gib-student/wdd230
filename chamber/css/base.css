@@ -85,7 +85,7 @@ h1, h2, h4, h5, h6 {
     display: block;
 }
 
-#home-main {
+#home-main, .contact-main {
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -286,3 +286,10 @@ h1, h2, h4, h5, h6 {
 .bus-list-box > div:nth-child(odd){
     background: #efefef;
 }
+/* Contact */
+.contact-img {
+    max-width: 100%;
+}
+.directors-headline, .contact-headline {
+    text-align: center;
+}   

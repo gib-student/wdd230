@@ -42,13 +42,16 @@ localStorage.setItem("lastMonth", m.toString());
 localStorage.setItem("lastYear", y.toString());
 
 // Lazy loading
-const images = document.querySelectorAll('[data-src]'); 
+const images = document.querySelectorAll('[data-src]');
+console.log("images:");
+console.log(images);
 const options = { threshold: [.5] } 
 function preloadImage(img) { 
     const source = img.getAttribute('data-src'); 
     img.src = source; 
 } 
 const io = new IntersectionObserver( (entries, io) => {
+    console.log("got here");
      entries.forEach(entry => {
         if(!entry.isIntersecting){ 
             return; 

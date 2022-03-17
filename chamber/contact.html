@@ -42,10 +42,27 @@
         <p id='date'>date</p>
     </div>
     <main class="contact-main">
-        <div class="directors-contacts">
-        </div>
+        <h2 class="directors-headline">Board of Directors</h2>
+        <div class="directors-contacts"></div>
+        <h2 class="contact-headline">Contact us</h2>
         <form class="inquiry-form">
+            <label for="fname">First name:</label>
+            <input class="contact-input" id="fname" name="fname" type="text">
+            
+            <label for="lname">Last name:</label>
+            <input class="contact-input" id="lname" name="lname" type="text">
+            
+            <label for="subject">Subject: </label>
+            <input id="subject" name="subject" type="text" class="contact-input">
+            
+            <label for="callback-email">Your email: </label>
+            <input id="contact-email" name="contact-email" class="contact-input"
+                type="email" placeholder="johndoe@myemail.com">
+        
+            <label for="message">Message</label>
+            <textarea class="contact-input" id="message" name="message"></textarea>
 
+            <input class="contact-submit" type="submit" value="Submit">
         </form>
     </main>
     <footer></footer>
