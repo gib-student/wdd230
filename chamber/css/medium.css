@@ -87,10 +87,18 @@
         width: 70%;
     }
     /* Directory */
+    .directors-contacts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .bus-link {
         font-size: 1.1em;
     }
     .bus-cards-box {
         grid-template-columns: 1fr 1fr; 
+    }
+    /* Contact */
+    .inquiry-form {
+        font-size: 1.5em;
     }
 }
