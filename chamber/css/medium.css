@@ -4,7 +4,7 @@
         .spotlight-title-1, .spotlight-title-2, .spotlight-title-3, .new-title {
         font-size: 1.7em;
     }
-    .hmemb, .join-label, .required-desc, .join-submit-btn {
+    .join-label, .required-desc, .join-submit-btn {
         font-size: 1.3em;
     }
     p, li, a, button, img {
@@ -85,6 +85,10 @@
     .join-btn {
         padding: 20px;
         width: 70%;
+    }
+    /* Join */
+    .hmemb {
+        font-size: 1.6em;
     }
     /* Directory */
     .directors-contacts {

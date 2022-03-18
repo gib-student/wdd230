@@ -197,6 +197,9 @@
     label {
         color: black;
     }
+    .join-main hr {
+        display: none
+    }
     /* Directory */
     .bus-cards-box {
         grid-template-columns: 1fr 1fr 1fr; 
