@@ -37,12 +37,8 @@ fetch('https://raw.githubusercontent.com/gib-student/wdd230-Main/main/chamber/da
             img.classList.add('contact-img');
             div.classList.add('card');
             const cardNumText = "contact-card" + cardNum.toString();
-            console.log(cardNumText);
-            console.log(typeof(cardNumText));
             div.classList.add(cardNumText);
-            console.log("div classes:");
-            console.log(div.getAttribute('class'));
-
+    
             // Append children to parent
             const contacts = document.querySelector('.directors-contacts');
             name.appendChild(nameB);

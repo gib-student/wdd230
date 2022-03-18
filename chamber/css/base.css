@@ -209,9 +209,6 @@ h1, h2, h4, h5, h6 {
     transition: .5s;
 }
 /* Join */
-.join-body {
-    background-color: #abc8c0;
-}
 .join-header {
     min-height: 100px;
 }
@@ -322,4 +319,7 @@ h1, h2, h4, h5, h6 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+textarea {
+    font-family: 'Arial', sans-serif; 
 }

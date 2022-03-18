@@ -5,7 +5,6 @@ const lastModified = document.lastModified;
 const month = date.getMonth();
 const monthDay = date.getDate();
 const weekDay = date.getDay();
-console.log("weekDay: " + weekDay.toString());
 
 // Hamburger menu
 const hambutton = document.querySelector('.hamburger');

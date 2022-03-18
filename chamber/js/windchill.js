@@ -39,8 +39,6 @@ fetch('http://api.openweathermap.org/data/2.5/weather?lat=43&lon=-111&'+
       weatherImg.src = base64data;
     };
   })();
-
-  console.log(data);
 });
 
 // Helpful site for these calculations: 
