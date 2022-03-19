@@ -15,8 +15,13 @@ h1, h2, h4, h5, h6 {
     font-size: 1em;
     font-family: 'Raleway', sans-serif;
 }
+#logo-header {
+    border-radius: 3px;
+}
 #top {
     background-color: #abc8c0;
+    border-radius: 3px;
+    margin-bottom: 10px;
 }
 .home-header {
     display: flex;
@@ -33,13 +38,16 @@ h1, h2, h4, h5, h6 {
 .logo {
     width: 140px;
 }
-.main-header {
+.home-body .main-header {
     display: none;
+}
+.main-header {
+    font-size: 1.2em;
 }
 .main-subheader {
     font-size: 1em;
-    margin-left: -25px;
     width: 100px;
+    text-align: center;
 }
 .social {
     display: flex;
@@ -56,6 +64,8 @@ h1, h2, h4, h5, h6 {
     margin: 0;
     padding: 5px;
     text-align: center;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 .top-bar-nav {
     margin: 0 auto;
@@ -124,9 +134,11 @@ h1, h2, h4, h5, h6 {
     background-color: #5899e2;
     margin: 10px 0 10px 0;
     padding: 5px;
+    border-radius: 3px;
 }
 .hero-image {
     max-width: 100%;
+    border-radius: 3px;
 }
 .hero-img-1, .hero-img-2, .hero-img-1-large {
     display: none;
@@ -136,7 +148,7 @@ h1, h2, h4, h5, h6 {
     font-size: 1.3em;
     bottom: 16px;
     left: 16px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .weather-title {
@@ -180,9 +192,12 @@ h1, h2, h4, h5, h6 {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 3px;
+    
 }
 #logo-footer {
     margin-top: 20px;
+    border-radius: 3px;
 }
 #contact {
     text-align: center;
