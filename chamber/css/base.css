@@ -19,15 +19,12 @@ h1, h2, h4, h5, h6 {
     border-radius: 3px;
 }
 #top {
-    background-color: #abc8c0;
+    /* background-color: #abc8c0; */
     border-radius: 3px;
     margin-bottom: 10px;
 }
 .home-header {
-    display: flex;
-    justify-content:space-around;
-    padding: 5px;
-    padding-top: 13px;
+    text-align: center;
 }
 .hamburger-img {
     width: 20px;
@@ -38,16 +35,12 @@ h1, h2, h4, h5, h6 {
 .logo {
     width: 140px;
 }
-.home-body .main-header {
-    display: none;
-}
 .main-header {
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 1.3em;
 }
 .main-subheader {
     font-size: 1em;
-    width: 100px;
-    text-align: center;
 }
 .social {
     display: flex;
@@ -59,8 +52,8 @@ h1, h2, h4, h5, h6 {
 .social-img:hover {
     box-shadow: 1px 4px 2px 0 #969696;
 }
-#date {
-    background-color: grey;
+#date { 
+    /* background-color: grey; */
     margin: 0;
     padding: 5px;
     text-align: center;
@@ -131,7 +124,8 @@ h1, h2, h4, h5, h6 {
     left: 16px;
 }
 .main-box {
-    background-color: #5899e2;
+    opacity: 99%;
+    background-color: #67aaf9;
     margin: 10px 0 10px 0;
     padding: 5px;
     border-radius: 3px;
@@ -188,7 +182,7 @@ h1, h2, h4, h5, h6 {
 .home-footer {
     display: flex;
     flex-direction: column;
-    background-color: #abc8c0;
+    /* background-color: #abc8c0; */
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -254,11 +248,9 @@ h1, h2, h4, h5, h6 {
 .bus-cards-box {
     display: grid;
     grid-template-columns: 1fr;
-    /* border: solid black; */
 }
 .bus-cards-box {
     padding: 2px 16px;
-    /* border: solid black; */
 }
 .bus-list-box {
     display: none;

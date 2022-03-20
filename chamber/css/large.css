@@ -1,4 +1,4 @@
-/* Media query for large views */
+    /* Media query for large views */
 @media only screen and (min-width: 1000px) {
     body {
         margin-left: 10%;
@@ -7,10 +7,6 @@
     #home-body {
         color: white;
     }
-    h1 {
-        font-size: 3.3em;
-        color: black;
-    }
     p, li, a, button, img {
         font-size: 1em;
     }
@@ -18,30 +14,30 @@
     .spotlight-title-1, .spotlight-title-2, .spotlight-title-3, .new-title
     .main-subheader, #date {
         font-size: 1.3em;
-        color: black
+    }
+    .main-header {
+        font-size: 2.5em;
+        display: inline;
+    }
+    .social {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .top-bar-nav {
+        max-width: fit-content;
+        background-color: white;
     }
     .hmemb {
         font-size: 1.8em;
         color: black;
     }
-    /* Header */
-    .home-header {
-        min-height: 200px;
-    }
     .logo {
         height: auto;
         width: 300px;
     }
-    .social {
-        flex-direction: row;
-    }
     .social-img {
         width: 50px;
         margin: 10px;
-    }
-    .top-bar-nav {
-        max-width: fit-content;
-        background-color: white;
     }
     .link-list li:hover {
         background-color: black;
