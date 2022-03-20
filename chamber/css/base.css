@@ -68,6 +68,8 @@ h1, h2, h4, h5, h6 {
     padding: 0;
 }
 .link-list li:first-child{
+    background-color: aliceblue;
+    border-radius: 3px;
     display: block;
 }
 .link-list li {

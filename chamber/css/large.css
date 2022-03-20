@@ -24,8 +24,9 @@
         flex-direction: row;
     }
     .top-bar-nav {
+        background-color:aliceblue;
         max-width: fit-content;
-        background-color: white;
+        border-radius: 3px;
     }
     .hmemb {
         font-size: 1.8em;
